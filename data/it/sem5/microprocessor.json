@@ -1,0 +1,100 @@
+{
+  "id": "IT-5-MP",
+  "branch": "Information Technology",
+  "semester": 5,
+  "subject": {
+    "code": null,
+    "name": "Microprocessor",
+    "description": "This course introduces the fundamentals of microprocessor and microcontroller architecture, assembly language programming, interfacing, and applications in embedded systems.",
+    "objectives": [
+      "To understand the architecture of 8-bit, 16-bit, and 32-bit microprocessors and microcontrollers",
+      "To learn assembly language programming for microprocessors and microcontrollers",
+      "To study interfacing of various peripherals such as I/O, ADC, DAC, timer, and sensors",
+      "To develop applications using different microcontrollers"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Fundamentals of Microprocessors",
+        "topics": [
+          "Fundamentals of Microprocessor Architecture",
+          "8-bit Microprocessor and Microcontroller architecture",
+          "Comparison of 8-bit, 16-bit, and 32-bit microcontrollers",
+          "Definition and characteristics of embedded systems",
+          "Role of microcontroller in embedded systems",
+          "Overview of the 8051 family"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "The 8051 Architecture",
+        "topics": [
+          "Internal block diagram: CPU, ALU, address, data and control bus",
+          "Working registers and SFRs",
+          "Clock and RESET circuits",
+          "Stack and Stack Pointer, Program Counter",
+          "I/O ports, Memory structures, Data and Program memory",
+          "Timing diagrams and Execution cycles"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Instruction Set and Programming",
+        "topics": [
+          "Addressing modes: immediate, register, direct, indirect, relative, indexed, bit addressing",
+          "8051 instruction set and instruction timings",
+          "Data transfer, arithmetic, and logical instructions",
+          "Branch, subroutine, and bit manipulation instructions",
+          "Assembly language programs and C language programs",
+          "Assemblers, compilers, programming and debugging tools"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Memory and I/O Interfacing",
+        "topics": [
+          "Memory and I/O expansion buses",
+          "Control signals and memory wait states",
+          "Interfacing of peripheral devices such as general purpose I/O, ADC, DAC, timers, and memory devices"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "External Communication Interface",
+        "topics": [
+          "Synchronous and asynchronous communication",
+          "RS232, SPI, I2C protocols",
+          "Introduction and interfacing to Bluetooth and ZigBee"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Applications",
+        "topics": [
+          "LED, LCD, and keyboard interfacing",
+          "Stepper motor and DC motor interfacing",
+          "Sensor interfacing"
+        ]
+      }
+    ],
+    "tags": [
+      "microprocessor",
+      "microcontroller",
+      "embedded systems",
+      "assembly programming",
+      "IT",
+      "BEU"
+    ],
+    "suggested_books": [
+      "M.A. Mazidi, J.G. Mazidi, and R.D. McKinlay, The 8051 Microcontroller and Embedded Systems: Using Assembly and C, Pearson Education, 2007",
+      "K.J. Ayala, 8051 Microcontroller, Delmar Cengage Learning, 2004",
+      "R. Kamal, Embedded System, McGraw Hill Education, 2009",
+      "R.S. Gaonkar, Microprocessor Architecture: Programming and Applications with the 8085, Penram International Publishing, 1996",
+      "D.A. Patterson and J.H. Hennessy, Computer Organization and Design: The Hardware/Software Interface, McGraw Hill Higher Education, 1991"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
