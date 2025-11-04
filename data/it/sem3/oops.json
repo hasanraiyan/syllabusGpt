@@ -1,0 +1,92 @@
+{
+  "id": "IT-3-OOPC++",
+  "branch": "Information Technology",
+  "semester": 3,
+  "subject": {
+    "code": null,
+    "name": "Object Oriented Programming Using C++",
+    "description": "Introduces the principles and features of object-oriented programming using C++. Focuses on object-oriented concepts, class design, inheritance, polymorphism, operator overloading, templates, and exception handling for developing structured and reusable software systems.",
+    "objectives": [
+      "To impart the basic concepts of Object Oriented Programming",
+      "To understand concepts about Classes and Data Abstraction",
+      "To understand basic concepts about Inheritance",
+      "To enable students to write algorithms for solving problems using object-oriented approach"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction to C++ and Object-Oriented Concepts",
+        "topics": [
+          "Object-Oriented Technology and Advantages of OOP",
+          "Introduction to C++: Tokens, Keywords, Identifiers, and Data Types",
+          "Derived Data Types, Type Modifiers, and Typecasting",
+          "Input-Output in C++",
+          "Operators, Constants, and Precedence of Operators",
+          "Strings and Basic Syntax"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Control Structures and Functions",
+        "topics": [
+          "Decision-making statements: if-else, nested if-else, switch, goto, break, continue",
+          "Loop statements: for, while, do-while",
+          "Functions in C++: User-defined and Built-in Functions",
+          "Function Parameters: Value, Reference, and Default Arguments",
+          "Function Overloading and Virtual Functions"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Classes and Data Abstraction",
+        "topics": [
+          "Structure of a Class in C++",
+          "Data Abstraction and Encapsulation",
+          "Built-in Operations on Classes",
+          "Assignment Operator and Class Scope",
+          "Constructors and Destructors",
+          "Member Functions, Accessor and Mutator Methods",
+          "Reference Parameters and Class Objects"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Overloading, Templates, and Inheritance",
+        "topics": [
+          "Operator Overloading and Function Overloading",
+          "Function Templates and Class Templates",
+          "Inheritance: Single, Multiple, and Multilevel",
+          "Virtual Base Class and Abstract Class",
+          "Pointer and Inheritance Concepts",
+          "Member Function Overloading and Virtual Functions"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Pointers, Arrays, and Exception Handling",
+        "topics": [
+          "Void Pointers and Pointer to Class/Object",
+          "Arrays and Array of Objects",
+          "Keywords: try, throw, and catch",
+          "Exception Handling Techniques: Terminate, Fix Error and Continue, Log and Continue, Stack Unwinding",
+          "Design and Implementation of Exception Handling in C++"
+        ]
+      }
+    ],
+    "tags": ["oop", "c++", "inheritance", "polymorphism", "software design", "IT", "BEU"],
+    "suggested_books": [
+      "Thinking in C++, Volumes 1 & 2 by Bruce Eckel and Chuck Allison, Pearson Education",
+      "Mastering C++ by Venugopal, Tata McGraw Hill",
+      "Object Oriented Programming with C++ by E. Balaguruswamy, Tata McGraw Hill",
+      "Starting Out with Object Oriented Programming in C++ by Tony Gaddis, Wiley India",
+      "The C++ Programming Language by Bjarne Stroustrup, Pearson Education",
+      "C++ Primer by Stanley B. Lippman, Josee Lajoie, Pearson Education",
+      "Programming with C++ by Ravichandran, Tata McGraw Hill",
+      "C++ Programming Black Book by Steven Holzner, Dreamtech Press"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

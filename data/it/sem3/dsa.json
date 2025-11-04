@@ -1,0 +1,93 @@
+{
+  "id": "IT-3-DSA",
+  "branch": "Information Technology",
+  "semester": 3,
+  "subject": {
+    "code": null,
+    "name": "Data Structure and Algorithms",
+    "description": "Introduces fundamental concepts of data structures and algorithms, including stacks, queues, linked lists, trees, and graphs. Focuses on algorithm design, analysis, and implementation of searching, sorting, and traversal techniques to enhance computational problem-solving skills.",
+    "objectives": [
+      "To impart the basic concepts of data structures and algorithms",
+      "To understand concepts about searching and sorting techniques",
+      "To understand basic concepts about stacks, queues, lists, trees, and graphs",
+      "To enable students to write algorithms for solving problems using fundamental data structures"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction to Data Structures and Algorithms",
+        "topics": [
+          "Basic Terminologies and Elementary Data Organizations",
+          "Data Structure Operations: insertion, deletion, traversal",
+          "Analysis of an Algorithm",
+          "Asymptotic Notations",
+          "Time–Space Trade-offs"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Stacks and Queues",
+        "topics": [
+          "Abstract Data Type (ADT) Stack and its operations",
+          "Algorithms and complexity analysis for stack operations",
+          "Applications of Stacks: Expression Conversion and Evaluation",
+          "ADT Queue, Types of Queues: Simple Queue, Circular Queue, Priority Queue",
+          "Operations on Queues and their analysis"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Linked Lists",
+        "topics": [
+          "Singly Linked Lists: Representation and Operations (Traversing, Searching, Insertion, Deletion)",
+          "Linked Representation of Stack and Queue",
+          "Header Nodes and Doubly Linked Lists: Operations and Analysis",
+          "Circular Linked Lists and their algorithms"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Searching, Sorting, and Hashing",
+        "topics": [
+          "Linear Search and Binary Search Techniques",
+          "Complexity Analysis of Search Algorithms",
+          "Sorting Algorithms: Selection Sort, Bubble Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort",
+          "Comparison of Sorting Algorithms in Space and Time Complexity",
+          "Hashing: Concept and Performance Analysis"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Trees and Graphs",
+        "topics": [
+          "Tree Terminologies and Types: Binary Tree, Threaded Binary Tree, Binary Search Tree, AVL Tree",
+          "Tree Operations: Insertion, Deletion, Traversal, and Complexity Analysis",
+          "Applications of Binary Trees",
+          "B and B+ Trees: Definitions, Algorithms, and Analysis",
+          "Graph Terminologies and Representations",
+          "Graph Search and Traversal Algorithms: BFS and DFS",
+          "Graph Complexity and Applications"
+        ]
+      }
+    ],
+    "tags": [
+      "data structures",
+      "algorithms",
+      "sorting",
+      "searching",
+      "graphs",
+      "trees",
+      "IT",
+      "BEU"
+    ],
+    "suggested_books": [
+      "Fundamentals of Data Structures by Ellis Horowitz and Sartaj Sahni, Computer Science Press",
+      "Algorithms, Data Structures, and Problem Solving with C++ by Mark Allen Weiss, Addison-Wesley Publishing Company",
+      "How to Solve it by Computer by R.G. Dromey, Pearson Education"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

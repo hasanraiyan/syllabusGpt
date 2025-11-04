@@ -1,0 +1,85 @@
+{
+  "id": "IT-3-MATHSIII",
+  "branch": "Information Technology",
+  "semester": 3,
+  "subject": {
+    "code": null,
+    "name": "Mathematics-III (Differential Calculus)",
+    "description": "Focuses on advanced topics in differential calculus, vector calculus, and differential equations. Introduces higher-order differentiation, partial derivatives, and applications to physical and engineering problems using vector and differential equation techniques.",
+    "objectives": [
+      "To understand the concepts of higher-order differentiation and Leibnitz’s theorem",
+      "To study limits, continuity, and differentiability for single and multivariable functions",
+      "To apply vector calculus to physical and engineering problems",
+      "To solve ordinary and partial differential equations of various types",
+      "To use differential calculus methods for optimization and modeling"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Successive Differentiation and Basic Concepts",
+        "topics": [
+          "Successive Differentiation",
+          "Leibnitz’s Theorem",
+          "Limit, Continuity, and Differentiability of a function for one variable"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Functions of Several Variables and Partial Differentiation",
+        "topics": [
+          "Limit, Continuity, and Differentiability of functions of several variables",
+          "Partial Derivatives and Euler’s Theorem for Homogeneous Functions",
+          "Total Derivatives and Change of Variables",
+          "Maxima and Minima of several variables",
+          "Lagrange’s Method of Multipliers",
+          "Taylor’s and Maclaurin’s Theorem with remainders for several variables"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Vector Calculus",
+        "topics": [
+          "Gradient, Divergence, and Curl of a Vector and their Physical Interpretations",
+          "Vector Identities and Directional Derivatives",
+          "Line, Surface, and Volume Integrals",
+          "Applications of Green’s, Stokes’, and Gauss Divergence Theorems (Without Proof)"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "First Order Ordinary Differential Equations",
+        "topics": [
+          "Exact, Linear, and Bernoulli’s Equations",
+          "Euler’s Equations",
+          "Equations not of First Degree",
+          "Equations Solvable for P, Y, X, and Clairaut’s Type"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Higher Order Ordinary Differential Equations",
+        "topics": [
+          "Second Order Linear Differential Equations with Variable Coefficients",
+          "Method of Variation of Parameters",
+          "Cauchy–Euler Equation",
+          "Power Series Solutions",
+          "Legendre Polynomials and Bessel Functions of the First Kind with their Properties"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Partial Differential Equations",
+        "topics": [
+          "First Order Partial Differential Equations",
+          "Solutions of First Order Linear and Non-Linear PDEs"
+        ]
+      }
+    ],
+    "tags": ["mathematics", "calculus", "differential equations", "vector calculus", "IT", "BEU"],
+    "suggested_books": [],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

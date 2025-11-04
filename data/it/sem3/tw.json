@@ -1,0 +1,78 @@
+{
+  "id": "IT-3-TW",
+  "branch": "Information Technology",
+  "semester": 3,
+  "subject": {
+    "code": null,
+    "name": "Technical Writing",
+    "description": "Introduces students to the principles and practices of effective technical communication. Focuses on clarity, structure, and audience awareness in professional and scientific documents. Emphasizes written, verbal, and visual communication in engineering and technology contexts.",
+    "objectives": [
+      "To understand the variety of structures used in technical documents",
+      "To convey clearly, cogently, and correctly through written media the technical aspects of a practice to audiences",
+      "To recognize and use verbal and technical elements necessary for successful scientific and technical communication",
+      "To work collaboratively and individually to research, analyze, and write about public debates regarding science and technology"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Fundamentals of Technical Writing",
+        "topics": [
+          "Need for clear and concise technical writing",
+          "Attributes and types of technical writing",
+          "Benefits of technical writing: technical, managerial, and general readers",
+          "Expressing versus impressing",
+          "Correct usage of grammar: noun, pronoun, verb, adjective, adverb, tense, and punctuation"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Performing Technical Studies and Writing Strategies",
+        "topics": [
+          "Types of technical studies and methodologies",
+          "Project proposal and report development",
+          "Gathering and analyzing background information",
+          "Designing test plans, performing experiments, and reporting results",
+          "Writing strategies: analysis of readers, purpose, and scope",
+          "Document options and report types",
+          "Technical content and presentation standards",
+          "Elements of writing style and effective illustration"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Formal and Informal Technical Reports",
+        "topics": [
+          "Structure of formal reports: outline, title, introduction, body, and conclusion",
+          "Writing procedures, describing processes, and presenting test results",
+          "Discussion and interpretation of findings",
+          "Components of informal reports: investigation reports, service work, action letters, and proposals",
+          "Elements of typical memo reports"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Review, Editing, and Oral Presentation",
+        "topics": [
+          "Types and methods of review and editing",
+          "Examples of reviews and editing methodology",
+          "Preparation and delivery of oral presentations",
+          "Use of visual aids and graphics",
+          "Techniques for maintaining writing skills and measuring report effectiveness"
+        ]
+      }
+    ],
+    "tags": ["technical writing", "communication", "documentation", "english", "IT", "BEU"],
+    "suggested_books": [
+      "Engineers’ Guide to Technical Writing by Kenneth G. Budinski, ASM International",
+      "Handbook for Technical Writing by James H. Shelton, NTC Contemporary Press",
+      "The Technical Writer’s Handbook: Writing With Style and Clarity by Matt Young, University Science Books",
+      "A Guide to Technical Writing by T. A. Rickard, Franklin Classics",
+      "Technical Writing by S. Jayprakash, Himalaya Publishing House Pvt. Ltd.",
+      "Technical Writing by O. N. Pandey"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

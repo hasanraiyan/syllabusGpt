@@ -1,0 +1,88 @@
+{
+  "id": "IT-3-DM",
+  "branch": "Information Technology",
+  "semester": 3,
+  "subject": {
+    "code": null,
+    "name": "Discrete Mathematics",
+    "description": "Introduces the fundamental concepts of discrete mathematics used in computer science, focusing on logic, proofs, sets, relations, functions, algebraic structures, and graph theory. Emphasizes mathematical reasoning, formal proofs, and problem-solving techniques essential for algorithmic and theoretical computing foundations.",
+    "objectives": [
+      "Use mathematically correct terminology and notation",
+      "Construct correct direct and indirect proofs",
+      "Use division into cases and counterexamples in proofs",
+      "Apply logical reasoning to solve a variety of problems"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Sets, Relations and Functions",
+        "topics": [
+          "Operations and Laws of Sets",
+          "Cartesian Products",
+          "Binary Relation and Partial Ordering Relation",
+          "Equivalence Relation",
+          "Image and Product of Functions",
+          "Bijective, Inverse and Composite Functions",
+          "Size of a Set: Finite and Infinite Sets",
+          "Countable and Uncountable Sets",
+          "Cantor’s Diagonal Argument and The Power Set Theorem",
+          "Schroeder–Bernstein Theorem"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Mathematical Induction and Counting",
+        "topics": [
+          "Principles of Mathematical Induction",
+          "Well-Ordering Principle and Recursive Definition",
+          "Division Algorithm: Prime Numbers, Greatest Common Divisor, Euclidean Algorithm, Fundamental Theorem of Arithmetic",
+          "Counting Techniques: Inclusion–Exclusion Principle, Pigeonhole Principle, Permutation and Combination"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Propositional and Predicate Logic",
+        "topics": [
+          "Syntax, Semantics, Validity and Satisfiability",
+          "Basic Connectives and Truth Tables",
+          "Logical Equivalence: Laws of Logic, Logical Implication, Rules of Inference, Use of Quantifiers",
+          "Proof Techniques: Forward Proof, Proof by Contradiction, Contrapositive, and Necessity–Sufficiency Proofs"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Algebraic Structures and Boolean Algebra",
+        "topics": [
+          "Algebraic Structures with One Binary Operation: Semigroups, Monoids, Groups",
+          "Congruence Relations, Quotient Structures, Free and Cyclic Groups, Permutation Groups",
+          "Algebraic Structures with Two Binary Operations: Rings, Integral Domains, and Fields",
+          "Boolean Algebra and Boolean Rings",
+          "Identities of Boolean Algebra, Duality, Representation of Boolean Functions",
+          "Disjunctive and Conjunctive Normal Forms"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Graphs and Trees",
+        "topics": [
+          "Graphs and Properties: Degree, Connectivity, Path, Cycle, Subgraph, Isomorphism",
+          "Eulerian and Hamiltonian Walks",
+          "Graph Coloring and Planar Graphs",
+          "Coloring Vertices, Edges, and Maps",
+          "Weighted Trees and Prefix Codes",
+          "Bi-connected Components, Articulation Points, and Shortest Paths"
+        ]
+      }
+    ],
+    "tags": ["discrete mathematics", "logic", "graph theory", "boolean algebra", "IT", "BEU"],
+    "suggested_books": [
+      "Kenneth H. Rosen, Discrete Mathematics and Its Applications, Tata McGraw-Hill",
+      "Susanna S. Epp, Discrete Mathematics with Applications, 4th Edition, Wadsworth Publishing Co. Inc.",
+      "C. L. Liu and D. P. Mohapatra, Elements of Discrete Mathematics: A Computer Oriented Approach, 3rd Edition, Tata McGraw-Hill"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

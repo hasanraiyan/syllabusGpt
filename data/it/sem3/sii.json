@@ -1,0 +1,18 @@
+{
+  "id": "IT-3-SII",
+  "branch": "Information Technology",
+  "semester": 3,
+  "subject": {
+    "code": null,
+    "name": "Summer Industry Internship",
+    "description": "",
+    "objectives": [],
+    "prerequisites": [],
+    "units": [],
+    "tags": ["internship", "industry training", "practical experience", "IT", "BEU"],
+    "suggested_books": [],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "IT-3-DE",
+  "branch": "Information Technology",
+  "semester": 3,
+  "subject": {
+    "code": null,
+    "name": "Digital Electronics",
+    "description": "Provides foundational understanding of digital systems, logic gates, combinational and sequential circuits, and data conversion techniques. Emphasizes circuit design using digital ICs, logic minimization, flip-flops, counters, memory devices, and programmable logic components.",
+    "objectives": [
+      "Understand the working of logic families and logic gates",
+      "Design and implement combinational and sequential logic circuits",
+      "Understand the process of analog-to-digital and digital-to-analog conversion",
+      "Use programmable logic devices to implement digital systems"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Fundamentals of Digital Systems and Logic Families",
+        "topics": [
+          "Digital signals and circuits",
+          "Logic gates: AND, OR, NOT, NAND, NOR, XOR",
+          "Boolean algebra and logic simplification",
+          "Number systems: binary, signed binary, hexadecimal",
+          "Binary arithmetic and complements",
+          "Codes: error detecting and correcting, BCD, Gray code",
+          "Characteristics of digital ICs, TTL, CMOS, interfacing CMOS and TTL",
+          "Tri-state logic and logic families"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Combinational Digital Circuits",
+        "topics": [
+          "K-map representation and simplification of logic functions",
+          "Don’t care conditions and minimization of logical functions",
+          "Multiplexers, Demultiplexers, Decoders, and Encoders",
+          "Adders and Subtractors: half, full, and carry look-ahead adder",
+          "BCD arithmetic and ALU design",
+          "Comparators, parity checkers, code converters, priority encoders",
+          "Decoder/drivers for display devices",
+          "Q-M method for function realization"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Sequential Circuits and Systems",
+        "topics": [
+          "Introduction to sequential logic and bistable elements",
+          "Flip-flops: SR, JK, D, T, master-slave, and edge-triggered types",
+          "Shift registers: serial and parallel operations",
+          "Counters: asynchronous (ripple) and synchronous counters",
+          "Ring counters and sequence generators",
+          "Applications of counters and shift registers",
+          "Design using special counter ICs"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "A/D and D/A Converters",
+        "topics": [
+          "Digital-to-analog converters: weighted resistor and R-2R ladder types",
+          "A/D converter principles: quantization, encoding, and specifications",
+          "Types of A/D converters: parallel comparator, successive approximation, dual slope, voltage-to-frequency, and voltage-to-time",
+          "Sample and hold circuits",
+          "Examples and specifications of A/D and D/A converter ICs"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Memory and Programmable Logic Devices",
+        "topics": [
+          "Memory organization and operation",
+          "Classification and characteristics of semiconductor memories",
+          "ROM, RAM, CAM, and CCD technologies",
+          "Expanding memory size and organization",
+          "Programmable devices: PLA, PAL, CPLD, and FPGA",
+          "Applications of programmable logic in digital system design"
+        ]
+      }
+    ],
+    "tags": [
+      "digital electronics",
+      "logic circuits",
+      "sequential circuits",
+      "combinational logic",
+      "IT",
+      "BEU"
+    ],
+    "suggested_books": [
+      "R. P. Jain, Modern Digital Electronics, McGraw Hill Education, 2009",
+      "M. M. Mano, Digital Logic and Computer Design, Pearson Education India, 2016",
+      "A. Kumar, Fundamentals of Digital Circuits, Prentice Hall India, 2016"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
