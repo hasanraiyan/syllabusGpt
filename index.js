@@ -106,7 +106,7 @@ app.get('/api/syllabus/subject/:id', (req, res) => {
 
 // Search syllabi
 app.get('/api/syllabus/search', (req, res) => {
-  const { q, branch, semester, tags, skill } = req.query;
+  const { q, branch, semester, tags, skill, page = 1, limit = 20 } = req.query;
   let results = syllabi;
 
   // Filter by branch and semester
@@ -131,7 +131,21 @@ app.get('/api/syllabus/search', (req, res) => {
     }));
   }
 
-  res.json(results);
+  // Pagination
+  const total = results.length;
+  const startIndex = (page - 1) * limit;
+  const endIndex = startIndex + parseInt(limit);
+  const paginatedResults = results.slice(startIndex, endIndex);
+
+  res.json({
+    results: paginatedResults,
+    pagination: {
+      page: parseInt(page),
+      limit: parseInt(limit),
+      total,
+      pages: Math.ceil(total / limit),
+    },
+  });
 });
 
 // Get all tags
