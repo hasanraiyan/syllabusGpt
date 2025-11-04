@@ -4,15 +4,14 @@ info:
   description: API for managing and searching syllabi
   version: v1.0.0
 servers:
-  - url: "https://x88l33tz-5000.inc1.devtunnels.ms"
-
+  - url: https://syllabusgpt.onrender.com
 paths:
   /api/syllabus:
     get:
       operationId: getSyllabus
       summary: Get branches, semesters, and subject counts
       responses:
-        '200':
+        "200":
           description: Branches with semester counts
           content:
             application/json:
@@ -27,7 +26,6 @@ paths:
                   additionalProperties:
                     type: integer
                     description: Number of subjects in this semester
-
   /api/syllabus/{branch}/{semester}:
     get:
       operationId: getSubjectsByBranchAndSemester
@@ -44,15 +42,14 @@ paths:
           schema:
             type: integer
       responses:
-        '200':
+        "200":
           description: List of subjects
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Syllabus'
-
+                  $ref: "#/components/schemas/Syllabus"
   /api/syllabus/subject/{id}:
     get:
       operationId: getSubjectById
@@ -64,13 +61,13 @@ paths:
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Subject details
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Syllabus'
-        '404':
+                $ref: "#/components/schemas/Syllabus"
+        "404":
           description: Subject not found
           content:
             application/json:
@@ -79,8 +76,7 @@ paths:
                 properties:
                   error:
                     type: string
-                    example: "Subject not found"
-
+                    example: Subject not found
   /api/syllabus/search:
     get:
       operationId: searchSyllabus
@@ -121,7 +117,7 @@ paths:
             default: 20
           description: Number of results per page
       responses:
-        '200':
+        "200":
           description: Paginated search results
           content:
             application/json:
@@ -131,7 +127,7 @@ paths:
                   results:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Syllabus'
+                      $ref: "#/components/schemas/Syllabus"
                   pagination:
                     type: object
                     properties:
@@ -143,13 +139,12 @@ paths:
                         type: integer
                       pages:
                         type: integer
-
   /api/syllabus/tags:
     get:
       operationId: getTags
       summary: Get all tags with counts
       responses:
-        '200':
+        "200":
           description: Tag counts
           content:
             application/json:
@@ -160,7 +155,20 @@ paths:
                 additionalProperties:
                   type: integer
                   description: Count of subjects with this tag
-
+  /api/syllabus/schema:
+    get:
+      operationId: getSchema
+      summary: Get the syllabus schema
+      responses:
+        "200":
+          description: Schema definition
+          content:
+            application/json:
+              schema:
+                type: object
+                description: JSON schema representing a syllabus structure
+                properties: {}
+                additionalProperties: true
 components:
   schemas:
     Syllabus:
@@ -173,8 +181,7 @@ components:
         semester:
           type: integer
         subject:
-          $ref: '#/components/schemas/Subject'
-
+          $ref: "#/components/schemas/Subject"
     Subject:
       type: object
       properties:
