@@ -87,13 +87,6 @@ app.get('/api/syllabus', (req, res) => {
   res.json(branches);
 });
 
-// Get subjects for branch and semester
-app.get('/api/syllabus/:branch/:semester', (req, res) => {
-  const { branch, semester } = req.params;
-  const subjects = syllabi.filter((syl) => syl.branch === branch && syl.semester == semester);
-  res.json(subjects);
-});
-
 // Get single subject by id
 app.get('/api/syllabus/subject/:id', (req, res) => {
   const { id } = req.params;
@@ -102,6 +95,13 @@ app.get('/api/syllabus/subject/:id', (req, res) => {
     return res.status(404).json({ error: 'Subject not found' });
   }
   res.json(subject);
+});
+
+// Get subjects for branch and semester
+app.get('/api/syllabus/:branch/:semester', (req, res) => {
+  const { branch, semester } = req.params;
+  const subjects = syllabi.filter((syl) => syl.branch === branch && syl.semester == semester);
+  res.json(subjects);
 });
 
 // Search syllabi
