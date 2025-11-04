@@ -162,20 +162,69 @@ app.get('/api/syllabus/tags', (req, res) => {
 // Get schema
 app.get('/api/syllabus/schema', (req, res) => {
   const schema = {
-    id: 'string',
-    branch: 'string',
-    semester: 'number',
-    subject: {
-      code: 'string|null',
-      name: 'string',
-      description: 'string',
-      objectives: 'array<string>',
-      prerequisites: 'array<string>',
-      units: 'array<{unit:number, title:string, topics:array<string>}>',
-      tags: 'array<string>',
-      suggested_books: 'array<string>',
-      meta: '{version:string}',
+    type: 'object',
+    properties: {
+      id: { type: 'string' },
+      branch: { type: 'string' },
+      semester: { type: 'integer' },
+      subject: {
+        type: 'object',
+        properties: {
+          code: { type: ['string', 'null'] },
+          name: { type: 'string' },
+          description: { type: 'string' },
+          objectives: {
+            type: 'array',
+            items: { type: 'string' },
+          },
+          prerequisites: {
+            type: 'array',
+            items: { type: 'string' },
+          },
+          units: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                unit: { type: 'integer' },
+                title: { type: 'string' },
+                topics: {
+                  type: 'array',
+                  items: { type: 'string' },
+                },
+              },
+              required: ['unit', 'title', 'topics'],
+            },
+          },
+          tags: {
+            type: 'array',
+            items: { type: 'string' },
+          },
+          suggested_books: {
+            type: 'array',
+            items: { type: 'string' },
+          },
+          meta: {
+            type: 'object',
+            properties: {
+              version: { type: 'string' },
+            },
+            required: ['version'],
+          },
+        },
+        required: [
+          'name',
+          'description',
+          'objectives',
+          'prerequisites',
+          'units',
+          'tags',
+          'suggested_books',
+          'meta',
+        ],
+      },
     },
+    required: ['id', 'branch', 'semester', 'subject'],
   };
   res.json(schema);
 });
