@@ -1,0 +1,78 @@
+{
+  "id": "IT-5-CIEIKT",
+  "branch": "Information Technology",
+  "semester": 5,
+  "subject": {
+    "code": null,
+    "name": "Constitution of India / Essence of Indian Knowledge Traditional",
+    "description": "Introduces the framework, philosophy, and principles of the Indian Constitution along with the social, political, and cultural heritage shaping it. Explores the structure of government, fundamental rights, duties, and directive principles, and connects constitutional ideas with India’s traditional knowledge and liberal thought.",
+    "objectives": [
+      "To understand the meaning, evolution, and philosophy of the Indian Constitution",
+      "To study the structure, powers, and functions of different organs of government",
+      "To learn about the Fundamental Rights, Duties, and Directive Principles of State Policy",
+      "To understand the historical and cultural context of Indian constitutionalism",
+      "To appreciate the role of the judiciary and constitutional amendments in protecting rights and ensuring justice"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction to the Constitution of India",
+        "topics": [
+          "Meaning of the Constitution and constitutionalism",
+          "Historical perspective of the Constitution of India",
+          "Salient features and characteristics of the Constitution"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Fundamental Rights, Duties, and Directive Principles",
+        "topics": [
+          "Scheme of the Fundamental Rights",
+          "Scheme of the Fundamental Duties and their legal status",
+          "Directive Principles of State Policy – Importance and implementation"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Structure and Functioning of Government",
+        "topics": [
+          "Federal structure and distribution of legislative and financial powers between the Union and the States",
+          "Parliamentary form of Government in India – Powers and status of the President of India",
+          "Amendment of the Constitutional Powers and Procedure"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Judiciary and Constitutional Amendments",
+        "topics": [
+          "Historical perspectives of constitutional amendments in India",
+          "Judicial activism and the role of the Supreme Court",
+          "Landmark judgments strengthening the basic structure doctrine"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Emergency and Local Governance Provisions",
+        "topics": [
+          "Emergency Provisions: National Emergency, President’s Rule, and Financial Emergency",
+          "Local Self-Government – Constitutional scheme in India"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Fundamental Rights and Equality",
+        "topics": [
+          "Scheme of the Fundamental Right to Equality",
+          "Scheme of the Fundamental Right to Certain Freedoms under Article 19",
+          "Scope of the Right to Life and Personal Liberty under Article 21"
+        ]
+      }
+    ],
+    "tags": ["constitution", "indian polity", "law", "citizenship", "IT", "BEU"],
+    "suggested_books": [],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

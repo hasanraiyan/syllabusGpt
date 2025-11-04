@@ -1,0 +1,118 @@
+{
+  "id": "IT-5-OS",
+  "branch": "Information Technology",
+  "semester": 5,
+  "subject": {
+    "code": null,
+    "name": "Operating System",
+    "description": "Provides a comprehensive understanding of operating system concepts, including process and thread management, memory and file management, concurrency, and I/O systems. Emphasizes mechanisms for process synchronization, deadlock handling, and scheduling in modern operating systems.",
+    "objectives": [
+      "To learn the fundamentals of Operating Systems",
+      "To understand how OS handles processes, threads, and their communication",
+      "To learn the mechanisms involved in memory management in contemporary operating systems",
+      "To gain knowledge on distributed OS concepts including mutual exclusion, deadlock detection, and agreement protocols",
+      "To understand components and management aspects of concurrency",
+      "To learn to implement simple OS mechanisms"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction to Operating Systems",
+        "topics": [
+          "Concept of Operating Systems",
+          "Generations of Operating Systems",
+          "Types of Operating Systems",
+          "Operating System Services and System Calls",
+          "Structure of an OS: Layered, Monolithic, Microkernel Operating Systems",
+          "Concept of Virtual Machine",
+          "Case study on UNIX and WINDOWS Operating Systems"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Processes and Scheduling",
+        "topics": [
+          "Definition and Process Relationship",
+          "Different states of a Process and Process State transitions",
+          "Process Control Block (PCB)",
+          "Context Switching",
+          "Threads: Definition, Types, Benefits, and Multithreading Concepts",
+          "Process Scheduling: Foundation, Scheduling Objectives, Types of Schedulers",
+          "Scheduling Criteria: CPU utilization, Throughput, Turnaround Time, Waiting Time, Response Time",
+          "Scheduling Algorithms: Preemptive and Non-preemptive (FCFS, SJF, RR)",
+          "Multiprocessor Scheduling and Real-Time Scheduling (RM and EDF)"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Inter-process Communication",
+        "topics": [
+          "Critical Section and Race Conditions",
+          "Mutual Exclusion and Hardware Solutions",
+          "Strict Alternation and Peterson’s Solution",
+          "Producer-Consumer Problem",
+          "Semaphores, Event Counters, Monitors, Message Passing",
+          "Reader-Writer Problem and Dining Philosopher Problem"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Deadlocks",
+        "topics": [
+          "Definition and Conditions for Deadlock",
+          "Deadlock Prevention, Avoidance, and Detection",
+          "Banker’s Algorithm",
+          "Deadlock Recovery Techniques"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Memory Management",
+        "topics": [
+          "Basic Concepts of Logical and Physical Address Space",
+          "Memory Allocation: Contiguous, Fixed, and Variable Partitioning",
+          "Internal and External Fragmentation and Compaction",
+          "Paging: Principle of Operation and Hardware Support",
+          "Segmentation and Paging with Segmentation",
+          "Virtual Memory: Basic Concepts, Page Replacement Algorithms (FIFO, Optimal, LRU, NRU, Second-Chance, Working Set Model)",
+          "Demand Paging, Thrashing, and Performance Issues"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "I/O and File Management",
+        "topics": [
+          "I/O Hardware and Devices",
+          "Device Controllers and Direct Memory Access",
+          "Interrupt Handlers and I/O Software Structure",
+          "Secondary Storage Management: Disk Scheduling (FCFS, SSTF, SCAN, C-SCAN)",
+          "Disk Reliability, Formatting, and Bad Block Management",
+          "File Management: File Concepts, File Access Methods, Directory Structure, File Allocation Methods (contiguous, linked, indexed)",
+          "Free Space Management (bit vector, linked list, grouping)",
+          "Directory Efficiency and Performance"
+        ]
+      }
+    ],
+    "tags": [
+      "operating system",
+      "process management",
+      "memory management",
+      "scheduling",
+      "I/O",
+      "IT",
+      "BEU"
+    ],
+    "suggested_books": [
+      "Operating System Concepts Essentials, 9th Edition by Avi Silberschatz, Peter Galvin, Greg Gagne, Wiley Asia Student Edition",
+      "Operating Systems: Internals and Design Principles, 5th Edition by William Stallings, Prentice Hall of India",
+      "Operating System: A Design-oriented Approach, 1st Edition by Charles Crowley, Irwin Publishing",
+      "Operating Systems: A Modern Perspective, 2nd Edition by Gary J. Nutt, Addison-Wesley",
+      "Design of the Unix Operating Systems, 8th Edition by Maurice Bach, Prentice Hall of India",
+      "Understanding the Linux Kernel, 3rd Edition by Daniel P. Bovet and Marco Cesati, O'Reilly and Associates"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

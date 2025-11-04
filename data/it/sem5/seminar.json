@@ -1,0 +1,18 @@
+{
+  "id": "IT-5-SEMINAR",
+  "branch": "Information Technology",
+  "semester": 5,
+  "subject": {
+    "code": null,
+    "name": "Seminar",
+    "description": "",
+    "objectives": [],
+    "prerequisites": [],
+    "units": [],
+    "tags": ["seminar", "presentation", "IT", "BEU"],
+    "suggested_books": [],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

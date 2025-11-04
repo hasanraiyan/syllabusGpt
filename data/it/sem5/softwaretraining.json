@@ -1,0 +1,18 @@
+{
+  "id": "IT-5-SOFTWARETRAINING",
+  "branch": "Information Technology",
+  "semester": 5,
+  "subject": {
+    "code": null,
+    "name": "Software Training",
+    "description": "",
+    "objectives": [],
+    "prerequisites": [],
+    "units": [],
+    "tags": ["software training", "practical skills", "IT", "BEU"],
+    "suggested_books": [],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
