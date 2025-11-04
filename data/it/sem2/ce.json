@@ -1,0 +1,90 @@
+{
+  "id": "IT-2-CE",
+  "branch": "Information Technology",
+  "semester": 2,
+  "subject": {
+    "code": "100276",
+    "name": "Communicative English",
+    "description": "Develops proficiency in English communication for technical and professional contexts. Emphasizes vocabulary, grammar, writing skills, comprehension, and the conventions of formal communication to enhance clarity and confidence in academic and workplace communication.",
+    "objectives": [],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Vocabulary Building",
+        "topics": [
+          "Nature of word formation: root word and morpheme",
+          "Prefixes and suffixes",
+          "Foreign expressions in English",
+          "Synonyms and antonyms",
+          "Homophones and homographs",
+          "Abbreviations and acronyms"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Basic Writing Skills",
+        "topics": [
+          "Parts of speech and sentence structure",
+          "Phrases and clauses",
+          "Punctuation and capitalization",
+          "Tenses: present, past, and future forms",
+          "Auxiliary and modal verbs",
+          "Question formation using primary auxiliaries"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Common Errors in English",
+        "topics": [
+          "Articles and prepositions",
+          "Modifiers and subject–verb agreement",
+          "Noun–pronoun agreement",
+          "Redundancies and clichés",
+          "Spelling and common usage errors"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Principles of Appropriate Writing",
+        "topics": [
+          "Defining, describing, classifying, and exemplifying ideas",
+          "Writing structure: introduction, body, and conclusion",
+          "Use of references, quotations, and illustrations",
+          "Paragraph organization and coherence",
+          "Qualities of professional writing: clarity, conciseness, completeness, correctness, and courtesy"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Practice of Formal Writing",
+        "topics": [
+          "Formal letters: cover letter and job application",
+          "Resume and report writing",
+          "Minutes of meeting, memorandum, and notice",
+          "Essay writing and paragraph development",
+          "Email etiquette, article writing, and writing for current issues"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Comprehension of Written English",
+        "topics": [
+          "Reading comprehension of prose, poetry, and short stories",
+          "Texts for comprehension: ‘Of Studies’ by Francis Bacon, ‘The Sun Rising’ by John Donne, ‘The Last Leaf’ by O. Henry",
+          "Practice with unseen passages"
+        ]
+      }
+    ],
+    "tags": ["english", "communication", "grammar", "professional writing", "IT", "BEU"],
+    "suggested_books": [
+      "English Language and Communication Skills for Engineers by Sanjay Kumar and Pushp Lata, Oxford University Press",
+      "Communicative English for Technical Students by De. Bijay Bahadur Singh and Dr. Kalpana Sinha, Foundation Publishing House",
+      "Communication Skills (As per AICTE Syllabus 2018) by Sanjay Kumar and Pushp Lata, Oxford University Press",
+      "A Course in Listening & Speaking by V. Sasi Kumar, P. Dutt, and Geetha Rajeevan, Foundation Books"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

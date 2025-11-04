@@ -1,0 +1,105 @@
+{
+  "id": "IT-2-EC",
+  "branch": "Information Technology",
+  "semester": 2,
+  "subject": {
+    "code": "100215",
+    "name": "Engineering Chemistry",
+    "description": "Introduces the fundamentals of chemistry relevant to engineering, focusing on atomic and molecular structures, spectroscopy, electrochemistry, water chemistry, polymers, and organic synthesis. Emphasizes applications of chemical principles in materials, fuels, corrosion, and industrial processes.",
+    "objectives": [
+      "To understand the atomic and molecular structure and bonding theories",
+      "To study spectroscopy and its applications to molecular systems",
+      "To learn electrochemical principles, corrosion mechanisms, and fuel types",
+      "To understand water chemistry and methods for hardness removal",
+      "To study polymers, plastics, and their industrial importance",
+      "To gain an introduction to organic reaction mechanisms and drug synthesis"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Atomic and Molecular Structure",
+        "topics": [
+          "Electromagnetic radiations and dual nature of electron",
+          "Heisenberg uncertainty principle",
+          "Photoelectric effect and Planck’s theory",
+          "Combination of atomic orbitals and molecular orbital theory",
+          "Bent’s rule and VSEPR theory with examples",
+          "Coordination numbers, geometries, and isomerism in transition metal complexes",
+          "Metal carbonyls: synthesis and structure"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Spectroscopy",
+        "topics": [
+          "Principle of rotational and vibrational spectroscopy",
+          "Selection rules and applications to diatomic molecules",
+          "Basics of electronic spectroscopy and UV-VIS applications",
+          "Basic principle of Nuclear Magnetic Resonance (NMR) spectroscopy and applications"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Electrochemistry and Fuels",
+        "topics": [
+          "Nernst equation and electrochemical cells",
+          "Introduction to corrosion, corrosion mechanisms and types: waterline, stress, and pitting corrosion",
+          "Lead-acid and dry cell (Lachlanche) batteries",
+          "Calorific value of fuels and coal analysis",
+          "Fuel cells and biofuels"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Water Chemistry",
+        "topics": [
+          "Hardness of water: estimation by EDTA and alkalinity method",
+          "Removal of hardness: soda-lime, zeolite, and ion-exchange processes",
+          "Boiler problems: sludge and scale formation, priming and foaming",
+          "Boiler corrosion and caustic embrittlement"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Polymers and Plastics",
+        "topics": [
+          "Polymerization techniques: free radical, ionic, and coordination mechanisms",
+          "Preparation, properties, and applications of phenol-formaldehyde resins, elastomers, and synthetic rubbers (Buna-N, Buna-S, neoprene)",
+          "Inorganic polymers: silicones, adhesives, and epoxy resins",
+          "Thermoplastics vs. thermosetting plastics",
+          "Commercially important thermoplastics: polyethylene, polyvinyl chloride, and polystyrene"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Organic Reactions and Drug Synthesis",
+        "topics": [
+          "Intermediates and reactions: substitution, addition, elimination, oxidation-reduction, cyclization, and epoxide ring opening",
+          "Synthesis of commonly used drug molecules"
+        ]
+      }
+    ],
+    "tags": [
+      "chemistry",
+      "engineering chemistry",
+      "electrochemistry",
+      "spectroscopy",
+      "polymers",
+      "IT",
+      "BEU"
+    ],
+    "suggested_books": [
+      "University Chemistry by B.H. Mahan, Pearson",
+      "Chemistry: Principles and Applications by M.J. Sienko and R.A. Plane, McGraw Hill",
+      "Fundamentals of Molecular Spectroscopy by C.N. Banwell, McGraw Hill",
+      "Engineering Chemistry (NPTEL Web Book) by B.L. Tembe and Kamaluddin",
+      "Physical Chemistry by P.W. Atkins, Oxford University Press",
+      "A Text Book of Engineering Chemistry by S. Chawla, Dhanpat Rai Publications",
+      "General Chemistry Part I by Sarkar, New Central Book Agency"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

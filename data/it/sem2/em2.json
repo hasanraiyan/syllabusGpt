@@ -1,0 +1,103 @@
+{
+  "id": "IT-2-EM2",
+  "branch": "Information Technology",
+  "semester": 2,
+  "subject": {
+    "code": "100202",
+    "name": "Engineering Mathematics-II",
+    "description": "Explores complex analysis, differential equations, sequences and series, Laplace transforms, and Fourier series with engineering applications. Focuses on mathematical modeling, computation, and analysis techniques essential for problem-solving in science and engineering.",
+    "objectives": [
+      "To introduce the concept of complex functions and analytic properties",
+      "To apply contour integration and residue theorem for evaluating integrals",
+      "To solve linear differential equations using analytical and transform methods",
+      "To study convergence of sequences and series using standard tests",
+      "To understand and apply Laplace and Fourier transforms to engineering problems"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Complex Analysis - I",
+        "topics": [
+          "Functions of a complex variable, limit, continuity, and differentiability",
+          "Analytic function and Cauchy-Riemann equations (Cartesian and polar form)",
+          "Harmonic function and harmonic conjugate"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Complex Analysis - II",
+        "topics": [
+          "Line and contour integrals",
+          "Cauchy’s theorem and Cauchy’s integral formula (without proof)",
+          "Taylor and Laurent series expansions",
+          "Zeros of analytic functions, isolated singularities, and residues",
+          "Cauchy’s residue theorem (without proof) and its applications"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Ordinary Differential Equations",
+        "topics": [
+          "Linear differential equations of nth order with constant coefficients",
+          "Homogeneous and non-homogeneous equations",
+          "Differential equations with variable coefficients",
+          "Cauchy-Euler equations",
+          "Method of variation of parameters"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Sequence and Series",
+        "topics": [
+          "Introduction to sequence and series",
+          "Nature and convergence of series",
+          "Tests of convergence: Comparison, D’Alembert’s ratio, Cauchy’s root, Raabe’s, Logarithmic, and Cauchy’s condensation test"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Laplace Transform",
+        "topics": [
+          "Definition, existence theorem, and properties of Laplace transform",
+          "Laplace transform of periodic functions",
+          "Inverse Laplace transform and convolution theorem",
+          "Applications to solve ordinary differential equations"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Fourier Series",
+        "topics": [
+          "Fourier series for general periodic functions",
+          "Fourier series for odd and even functions",
+          "Half-range sine and cosine series",
+          "Parseval’s theorem and its applications"
+        ]
+      }
+    ],
+    "tags": [
+      "engineering mathematics",
+      "complex analysis",
+      "laplace transform",
+      "fourier series",
+      "differential equations",
+      "IT",
+      "BEU"
+    ],
+    "suggested_books": [
+      "Advanced Engineering Mathematics by Erwin Kreyszig, John Wiley & Sons, 10th Edition, 2020",
+      "Advanced Engineering Mathematics by H.K. Dass, S. Chand & Company Pvt. Ltd., 22nd Edition, 2018",
+      "Higher Engineering Mathematics by B.S. Grewal, Khanna Publishers, 44th Edition, 2023",
+      "Complex Variables (Theory and Applications) by H.S. Kasana, PHI, 2nd Edition, 2015",
+      "A Text Book of Engineering Mathematics by N.P. Bali and M. Goyal, Laxmi Publications, 9th Edition, 2014",
+      "Higher Engineering Mathematics by B.V. Ramana, Tata McGraw Hill, 11th Reprint, 2010",
+      "Differential Equations by S.L. Ross, Wiley Publications, 2nd Edition, 2016",
+      "Advanced Differential Equations by M.D. Raisinghania, S. Chand & Company Pvt. Ltd., 18th Edition, 2015",
+      "Schaum’s Outline of Complex Variables by Murray R. Spiegel et al., McGraw Hill Education, 2nd Edition, 2010"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
