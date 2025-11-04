@@ -1,0 +1,61 @@
+{
+  "id": "IT-4-COA",
+  "branch": "Information Technology",
+  "semester": 4,
+  "subject": {
+    "code": null,
+    "name": "Computer Organization and Architecture",
+    "description": "Study of computer system structure, function, and performance, including CPU design, memory organization, I/O principles, and instruction-level architecture.",
+    "objectives": [
+      "How Computer Systems work and the basic principles",
+      "Instruction Level Architecture and Instruction Execution",
+      "The current state of art in memory system design",
+      "How I/O devices are accessed and its principles",
+      "To provide the knowledge on Instruction Level Parallelism",
+      "To impart the knowledge on microprogramming",
+      "Concepts of advanced pipe lining techniques"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Functional Blocks and CPU Architecture",
+        "topics": [
+          "Functional blocks of a computer: CPU, memory, input-output subsystems, control unit",
+          "Instruction set architecture of a CPU—registers, instruction execution cycle, RTL interpretation of instructions, addressing modes",
+          "Data representation: signed and unsigned numbers, fixed and floating point representations, character representation",
+          "Computer arithmetic: integer addition/subtraction, ripple carry adder, Booth multiplier, carry save multiplier, floating point arithmetic"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "x86 Architecture and Control Unit Design",
+        "topics": [
+          "Introduction to x86 architecture",
+          "CPU control unit design: hardwired and micro-programmed design approaches",
+          "Case study: design of a simple hypothetical CPU",
+          "Memory system design: semiconductor memory technologies, parallel processing, concurrent access to memory, and cache coherency"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Memory Organization",
+        "topics": [
+          "Memory interleaving and hierarchical memory organization",
+          "Cache memory: cache size vs. block size, mapping functions, replacement algorithms, write policies"
+        ]
+      }
+    ],
+    "tags": ["computer architecture", "organization", "hardware", "IT", "BEU"],
+    "suggested_books": [
+      "Computer Organization and Design: The Hardware/Software Interface, 5th Edition by David A. Patterson and John L. Hennessy, Elsevier",
+      "Computer Organization and Embedded Systems, 6th Edition by Carl Hamacher, McGraw Hill Higher Education",
+      "Computer Architecture and Organization, 3rd Edition by John P. Hayes, WCB/McGraw-Hill",
+      "Computer Organization and Architecture: Designing for Performance, 10th Edition by William Stallings, Pearson Education",
+      "Computer System Design and Architecture, 2nd Edition by Vincent P. Heuring and Harry F. Jordan, Pearson Education"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

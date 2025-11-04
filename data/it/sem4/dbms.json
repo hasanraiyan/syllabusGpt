@@ -1,0 +1,79 @@
+{
+  "id": "IT-4-DBMS",
+  "branch": "Information Technology",
+  "semester": 4,
+  "subject": {
+    "code": null,
+    "name": "Database Management Systems",
+    "description": "Covers the principles of database system design, modeling, querying, and implementation, including relational, hierarchical, and network models, along with advanced database topics such as data warehousing and security.",
+    "objectives": [
+      "To understand the different issues involved in the design and implementation of a database system",
+      "To study the physical and logical database designs, database modeling, relational, hierarchical, and network models",
+      "To understand and use data manipulation language to query, update, and manage a database",
+      "To develop an understanding of essential DBMS concepts such as database security, integrity, concurrency, distributed database, and intelligent database",
+      "To design and build a simple database system and demonstrate competence with the fundamental tasks involved with modeling, designing, and implementing a DBMS"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Database System Architecture",
+        "topics": [
+          "Data abstraction and data independence",
+          "Data Definition Language (DDL) and Data Manipulation Language (DML)",
+          "Data models: Entity-relationship model, network model, relational and object-oriented data models",
+          "Integrity constraints and data manipulation operations"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Relational Query Languages",
+        "topics": [
+          "Relational algebra, Tuple and domain relational calculus, SQL3",
+          "DDL and DML constructs",
+          "Open source and commercial DBMS: MySQL, Oracle, DB2, SQL Server",
+          "Relational database design: domain and data dependency, Armstrong’s axioms, normal forms, dependency preservation, lossless design",
+          "Query processing and optimization: evaluation of relational algebra expressions, join strategies, query equivalence, query optimization algorithms"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Storage and Transaction Processing",
+        "topics": [
+          "Storage strategies: indices, B-trees, hashing",
+          "Transaction processing: concurrency control, ACID property, serializability of scheduling",
+          "Locking and timestamp-based schedulers, multi-version and optimistic concurrency control schemes, database recovery"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Database Security",
+        "topics": [
+          "Authentication, authorization, and access control",
+          "DAC, MAC, and RBAC models",
+          "Intrusion detection and SQL injection prevention"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Advanced Topics",
+        "topics": [
+          "Object-oriented and object-relational databases",
+          "Logical databases and web databases",
+          "Distributed databases",
+          "Data warehousing and data mining"
+        ]
+      }
+    ],
+    "tags": ["database", "DBMS", "SQL", "information technology", "BEU"],
+    "suggested_books": [
+      "Database System Concepts, 6th Edition by Abraham Silberschatz, Henry F. Korth, S. Sudarshan, McGraw-Hill",
+      "Principles of Database and Knowledge-Base Systems, Vol 1 by J. D. Ullman, Computer Science Press",
+      "Fundamentals of Database Systems, 5th Edition by R. Elmasri and S. Navathe, Pearson Education",
+      "Foundations of Databases, Reprint by Serge Abiteboul, Richard Hull, Victor Vianu, Addison-Wesley"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
