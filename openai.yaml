@@ -7,22 +7,6 @@ servers:
   - url: "https://x88l33tz-5000.inc1.devtunnels.ms"
 
 paths:
-  /:
-    get:
-      operationId: getRoot
-      summary: Root endpoint
-      responses:
-        '200':
-          description: API status
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    example: "Syllabus API is running"
-
   /api/syllabus:
     get:
       operationId: getSyllabus
@@ -150,25 +134,6 @@ paths:
                 additionalProperties:
                   type: integer
                   description: Count of subjects with this tag
-
-  /api/syllabus/schema:
-    get:
-      operationId: getSchema
-      summary: Get schema definition
-      responses:
-        '200':
-          description: Schema object
-          content:
-            application/json:
-              schema:
-                type: object
-                description: JSON schema definition for a syllabus object
-                properties:
-                  fields:
-                    type: array
-                    description: List of fields in the syllabus schema
-                    items:
-                      type: string
 
 components:
   schemas:
