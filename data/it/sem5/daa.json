@@ -1,0 +1,81 @@
+{
+  "id": "IT-5-DAA",
+  "branch": "Information Technology",
+  "semester": 5,
+  "subject": {
+    "code": null,
+    "name": "Design and Analysis of Algorithm",
+    "description": "Focuses on algorithmic strategies, asymptotic performance analysis, and algorithm design paradigms including divide-and-conquer, greedy, and dynamic programming. Covers tractable and intractable problems and introduces approximation and randomized algorithms.",
+    "objectives": [
+      "Analyze the asymptotic performance of algorithms",
+      "Write rigorous correctness proofs for algorithms",
+      "Demonstrate familiarity with major algorithms and data structures",
+      "Apply important algorithmic design paradigms and methods of analysis",
+      "Synthesize efficient algorithms in common engineering design situations"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction and Analysis of Algorithms",
+        "topics": [
+          "Characteristics of algorithms",
+          "Asymptotic analysis of complexity bounds – best, average and worst-case behavior",
+          "Performance measurement of algorithms",
+          "Time and space trade-offs",
+          "Analysis of recursive algorithms using substitution, recursion tree, and master’s theorem"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Fundamental Algorithmic Strategies",
+        "topics": [
+          "Brute-force, greedy, dynamic programming, branch-and-bound, and backtracking methodologies",
+          "Applications of algorithmic design for problem-solving: bin packing, knapsack, traveling salesman problem",
+          "Heuristics – characteristics and applications"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Graph and Tree Algorithms",
+        "topics": [
+          "Traversal algorithms: Depth First Search (DFS) and Breadth First Search (BFS)",
+          "Shortest path algorithms",
+          "Transitive closure",
+          "Minimum spanning tree",
+          "Topological sorting",
+          "Network flow algorithms"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Tractable and Intractable Problems",
+        "topics": [
+          "Computability of algorithms and computability classes – P, NP, NP-complete, and NP-hard",
+          "Cook’s theorem",
+          "Standard NP-complete problems and reduction techniques"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Advanced Topics",
+        "topics": [
+          "Approximation algorithms",
+          "Randomized algorithms",
+          "Classes of problems beyond NP – PSPACE"
+        ]
+      }
+    ],
+    "tags": ["algorithms", "complexity", "data structures", "IT", "BEU"],
+    "suggested_books": [
+      "Introduction to Algorithms, 4th Edition by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, MIT Press/McGraw-Hill",
+      "Fundamentals of Algorithms by E. Horowitz",
+      "Algorithm Design, 1st Edition by Jon Kleinberg and Éva Tardos, Pearson",
+      "Algorithm Design: Foundations, Analysis, and Internet Examples, 2nd Edition by Michael T. Goodrich and Roberto Tamassia, Wiley",
+      "Algorithms: A Creative Approach, 3rd Edition by Udi Manber, Addison-Wesley"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
