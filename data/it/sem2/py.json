@@ -1,0 +1,104 @@
+{
+  "id": "IT-2-PP",
+  "branch": "Information Technology",
+  "semester": 2,
+  "subject": {
+    "code": "100218",
+    "name": "Python Programming",
+    "description": "",
+    "objectives": [],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Input and Output",
+        "topics": [
+          "Identifiers, keywords, statements and expressions",
+          "Variables, operators, precedence and associativity",
+          "Data types, indentation, comments",
+          "Reading input and print output",
+          "Type conversions and the type() function",
+          "Dynamic and strongly typed language"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Control Flow, Functions and Loops",
+        "topics": [
+          "Control flow statements: if, if-else, if-elif-else, nested if",
+          "Built-in functions and commonly used modules",
+          "Function definition, calling, and return statements",
+          "Void functions, scope and lifetime of variables",
+          "Default parameters",
+          "while loop and for loop",
+          "continue and break statements"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Strings",
+        "topics": [
+          "Creating and storing strings",
+          "Basic string operations",
+          "Accessing characters in strings by index number",
+          "String slicing and joining",
+          "String methods",
+          "Formatting strings"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Lists",
+        "topics": [
+          "Creating lists",
+          "Basic list operations",
+          "Indexing and slicing in lists",
+          "Built-in functions used on lists",
+          "List methods and statements"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Dictionaries, Tuples and Sets",
+        "topics": [
+          "Creating dictionaries",
+          "Accessing and modifying key-value pairs",
+          "Built-in functions and dictionary methods",
+          "The del statement",
+          "Creating tuples and basic tuple operations",
+          "Indexing and slicing in tuples",
+          "Built-in functions used on tuples",
+          "Relation between tuples and lists",
+          "Relation between tuples and dictionaries",
+          "Tuple methods",
+          "Creating and using sets",
+          "Set methods, traversing sets, and frozen sets"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Files",
+        "topics": [
+          "Types of files",
+          "Creating and reading text data",
+          "File methods to read and write data",
+          "Reading and writing binary files",
+          "Pickle module",
+          "Reading and writing CSV files",
+          "os and os.path modules"
+        ]
+      }
+    ],
+    "tags": ["python", "programming", "IT", "BEU"],
+    "suggested_books": [
+      "Introduction to Python Programming by Gowrishankar and Veena A., 1st Edition, CRC Press/Taylor & Francis, 2018, ISBN: 9780815394372",
+      "Python Data Science Handbook: Essential Tools for Working with Data by Jake VanderPlas, 1st Edition, O'Reilly Media, 2016, ISBN: 9781491912058",
+      "Core Python Applications Programming by Wesley J. Chun, 3rd Edition, Pearson Education India, 2015, ISBN: 9789332555364",
+      "Python Programming: A Modular Approach by Sheetal Taneja, Pearson Publications",
+      "Programming and Problem Solving with Python by Ashok Namdev Kamthane and Amit Ashok Kamthane, Tata McGraw Hill Education (India) Pvt. Ltd."
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}

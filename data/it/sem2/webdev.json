@@ -1,0 +1,101 @@
+{
+  "id": "IT-2-IWD",
+  "branch": "Information Technology",
+  "semester": 2,
+  "subject": {
+    "code": "100219",
+    "name": "Introduction to Web Design",
+    "description": "",
+    "objectives": [],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Fundamentals of Internet and Web Technologies",
+        "topics": [
+          "Web Basics and Overview",
+          "Introduction to Internet, World Wide Web, and History of the Web",
+          "Website, Homepage, Domain Name",
+          "Web Browsers and Web Servers",
+          "Web Server Working",
+          "Client-Server Architecture and 3-Tier Web Architecture",
+          "Web Hosting, URL, MIME, HTTP Protocol",
+          "Web Programmer’s Toolbox"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Introduction to HTML: Elements and Structure",
+        "topics": [
+          "Introduction to HTML and its fundamentals",
+          "History of HTML",
+          "Document body and basic structure",
+          "HTML tags for sections, text, headings, and paragraphs",
+          "Hyperlinks, lists, tables, color coding, and images",
+          "Div and Span tags for grouping",
+          "Character entities and URL encoding",
+          "Frames and frame sets"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "HTML Forms and Multimedia Integration",
+        "topics": [
+          "HTML forms and form elements",
+          "Form attributes",
+          "HTML canvas element",
+          "Embedding audio and video in a webpage",
+          "Difference between HTML and XHTML"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Introduction to CSS: Styling and Layouts",
+        "topics": [
+          "Need for CSS and introduction",
+          "Basic syntax and structure",
+          "External, Internal, and Inline Style Sheets",
+          "CSS Selectors and use of div & span tags",
+          "CSS color, backgrounds, borders, margins, and padding",
+          "Box Model, height, width, and outline",
+          "CSS text, font, and table properties",
+          "CSS buttons, display, float & clear, and overflow properties"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "JavaScript Basics: Scripting and Control",
+        "topics": [
+          "Introduction to client-side scripting and the need for JavaScript",
+          "Enhancing HTML documents with JavaScript",
+          "JavaScript building blocks: data types, variables, and operators",
+          "Operator precedence and type conversion",
+          "Conditional statements: if, else if, switch",
+          "Loops in JavaScript: for, while, do/while",
+          "Break and continue statements"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Advanced JavaScript: Objects and Events",
+        "topics": [
+          "Objects in JavaScript: array, number, string, and boolean",
+          "Event handling: onclick, onsubmit",
+          "Error handling and JavaScript scope",
+          "Responsive modal forms",
+          "Form validation"
+        ]
+      }
+    ],
+    "tags": ["web design", "html", "css", "javascript", "internet technologies", "IT", "BEU"],
+    "suggested_books": [
+      "Beginning Web Programming with HTML, XHTML, and CSS by Jon Duckett, WROX, ISBN: 9780470259313",
+      "JavaScript: The Definitive Guide, 6th Edition by David Flanagan, O'Reilly Media, ISBN: 978059680552",
+      "Internet & World Wide Web: How to Program, 4th Edition by H.M. Deitel, P.J. Deitel, Pearson, ISBN: 9780136085645",
+      "Internet and Web Technologies by Kamal Raj, McGraw Hill Education India, ISBN: 9780070472969"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
