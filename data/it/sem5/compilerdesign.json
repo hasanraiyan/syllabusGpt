@@ -1,0 +1,92 @@
+{
+  "id": "IT-5-CD",
+  "branch": "Information Technology",
+  "semester": 5,
+  "subject": {
+    "code": null,
+    "name": "Compiler Design",
+    "description": "Covers the principles and techniques used in the design and implementation of compilers. Focuses on the phases of compilation, lexical and syntax analysis, semantic analysis, code generation, and optimization techniques.",
+    "objectives": [
+      "To understand and list the different stages in the process of compilation",
+      "Identify different methods of lexical analysis",
+      "Design top-down and bottom-up parsers",
+      "Identify synthesized and inherited attributes",
+      "Develop syntax-directed translation schemes",
+      "Develop algorithms to generate code for a target machine",
+      "Learn how to design and implement a compiler and study underlying theories with emphasis on imperative languages"
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction and Lexical Analysis",
+        "topics": [
+          "Phases of compilation and overview",
+          "Lexical Analysis (scanner): Regular languages, finite automata, regular expressions",
+          "Conversion from regular expressions to finite automata",
+          "Scanner generator tools (lex, flex)"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Syntax Analysis (Parser)",
+        "topics": [
+          "Context-free languages and grammars",
+          "Push-down automata",
+          "LL(1) grammars and top-down parsing",
+          "Operator grammars",
+          "LR(0), SLR(1), LR(1), LALR(1) grammars and bottom-up parsing",
+          "Ambiguity and LR parsing",
+          "Parser generators (yacc, bison)"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Semantic Analysis and Symbol Table",
+        "topics": [
+          "Attribute grammars, syntax-directed definition",
+          "Evaluation and flow of attributes in syntax trees",
+          "Symbol Table: structure, symbol attributes, and management",
+          "Run-time environment: procedure activation, parameter passing, value return, memory allocation, and scope"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Intermediate Code Generation and Optimization",
+        "topics": [
+          "Translation of different language features and intermediate forms",
+          "Code improvement and optimization: control-flow, data-flow dependence",
+          "Local and global optimization, loop optimization, peephole optimization",
+          "Architecture-dependent optimizations: instruction scheduling, cache optimization",
+          "Register allocation and target code generation"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Advanced Topics",
+        "topics": [
+          "Type systems and data abstraction",
+          "Compilation of object-oriented features",
+          "Compilation of non-imperative programming languages"
+        ]
+      }
+    ],
+    "tags": [
+      "compiler",
+      "lexical analysis",
+      "parsing",
+      "code generation",
+      "optimization",
+      "IT",
+      "BEU"
+    ],
+    "suggested_books": [
+      "Compilers: Principles, Techniques, and Tools by Alfred V. Aho, Ravi Sethi, and Jeffrey D. Ullman, Pearson Education",
+      "Compiler Design by Santanu Chattopadhyay, PHI",
+      "Modern Compiler Design by Dick Grune, Henri E. Bal, Ceriel J.H. Jacobs, and Koen G. Langendoen, Wiley Dreamtech"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
