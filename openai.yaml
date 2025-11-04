@@ -1,0 +1,230 @@
+openapi: 3.1.0
+info:
+  title: Syllabus API
+  description: API for managing and searching syllabi
+  version: v1.0.0
+servers:
+  - url: "https://x88l33tz-5000.inc1.devtunnels.ms"
+
+paths:
+  /:
+    get:
+      operationId: getRoot
+      summary: Root endpoint
+      responses:
+        '200':
+          description: API status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Syllabus API is running"
+
+  /api/syllabus:
+    get:
+      operationId: getSyllabus
+      summary: Get branches, semesters, and subject counts
+      responses:
+        '200':
+          description: Branches with semester counts
+          content:
+            application/json:
+              schema:
+                type: object
+                description: Mapping of branches to semesters with subject counts
+                properties: {}
+                additionalProperties:
+                  type: object
+                  description: Mapping of semesters to subject counts
+                  properties: {}
+                  additionalProperties:
+                    type: integer
+                    description: Number of subjects in this semester
+
+  /api/syllabus/{branch}/{semester}:
+    get:
+      operationId: getSubjectsByBranchAndSemester
+      summary: Get subjects for a specific branch and semester
+      parameters:
+        - name: branch
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: semester
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: List of subjects
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Syllabus'
+
+  /api/syllabus/subject/{id}:
+    get:
+      operationId: getSubjectById
+      summary: Get a single subject by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Subject details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Syllabus'
+        '404':
+          description: Subject not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "Subject not found"
+
+  /api/syllabus/search:
+    get:
+      operationId: searchSyllabus
+      summary: Search syllabi
+      parameters:
+        - name: q
+          in: query
+          schema:
+            type: string
+          description: Search query
+        - name: branch
+          in: query
+          schema:
+            type: string
+        - name: semester
+          in: query
+          schema:
+            type: integer
+        - name: tags
+          in: query
+          schema:
+            type: string
+          description: Comma-separated tags
+        - name: skill
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Syllabus'
+
+  /api/syllabus/tags:
+    get:
+      operationId: getTags
+      summary: Get all tags with counts
+      responses:
+        '200':
+          description: Tag counts
+          content:
+            application/json:
+              schema:
+                type: object
+                description: A map of tag names to their usage counts
+                properties: {}
+                additionalProperties:
+                  type: integer
+                  description: Count of subjects with this tag
+
+  /api/syllabus/schema:
+    get:
+      operationId: getSchema
+      summary: Get schema definition
+      responses:
+        '200':
+          description: Schema object
+          content:
+            application/json:
+              schema:
+                type: object
+                description: JSON schema definition for a syllabus object
+                properties:
+                  fields:
+                    type: array
+                    description: List of fields in the syllabus schema
+                    items:
+                      type: string
+
+components:
+  schemas:
+    Syllabus:
+      type: object
+      properties:
+        id:
+          type: string
+        branch:
+          type: string
+        semester:
+          type: integer
+        subject:
+          $ref: '#/components/schemas/Subject'
+
+    Subject:
+      type: object
+      properties:
+        code:
+          type: string
+          nullable: true
+        name:
+          type: string
+        description:
+          type: string
+        objectives:
+          type: array
+          items:
+            type: string
+        prerequisites:
+          type: array
+          items:
+            type: string
+        units:
+          type: array
+          items:
+            type: object
+            properties:
+              unit:
+                type: integer
+              title:
+                type: string
+              topics:
+                type: array
+                items:
+                  type: string
+        tags:
+          type: array
+          items:
+            type: string
+        suggested_books:
+          type: array
+          items:
+            type: string
+        meta:
+          type: object
+          properties:
+            version:
+              type: string
