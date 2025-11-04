@@ -1,0 +1,97 @@
+{
+  "id": "it-4-machine-learning",
+  "branch": "Information Technology",
+  "semester": 4,
+  "subject": {
+    "code": null,
+    "name": "Machine Learning",
+    "description": "Concepts of learning patterns from data, algorithm design and analysis, performance evaluation, and applications.",
+    "objectives": [
+      "To learn the concept of how to learn patterns and concepts from data.",
+      "Design and analyze various machine learning algorithms and their applications.",
+      "Evaluate various factors of machine learning to measure performance.",
+      "Understand basic applications of machine learning in recent technological trends."
+    ],
+    "prerequisites": ["Linear Algebra", "Probability & Statistics", "Programming basics"],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction",
+        "topics": [
+          "Basic definitions",
+          "Linear Algebra",
+          "Statistical learning theory",
+          "Types of learning",
+          "Hypothesis space and inductive bias",
+          "Evaluation and cross validation",
+          "Optimization"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Statistical Decision Theory & Regression",
+        "topics": [
+          "Bayesian Learning (ML, MAP, Bayes estimates, conjugate priors)",
+          "Linear Regression",
+          "Ridge Regression",
+          "Lasso",
+          "Principal Component Analysis",
+          "Partial Least Squares"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Linear Classification & Advanced Models",
+        "topics": [
+          "Linear Classification",
+          "Logistic Regression",
+          "Linear Discriminant Analysis",
+          "Quadratic Discriminant Analysis",
+          "Perceptron",
+          "Support Vector Machines + Kernels",
+          "Artificial Neural Networks + Backpropagation",
+          "Decision Trees",
+          "Naive Bayes"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Hypothesis Testing, Ensembles & Clustering",
+        "topics": [
+          "Hypothesis testing",
+          "Ensemble Methods (Bagging, AdaBoost, Gradient Boosting)",
+          "Clustering: K-means, K-medoids, density-based, hierarchical, spectral"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Probabilistic & Reinforcement Methods",
+        "topics": [
+          "Expectation Maximization",
+          "Gaussian Mixture Models (GMMs)",
+          "Learning theory",
+          "Intro to Reinforcement Learning",
+          "Bayesian Networks"
+        ]
+      }
+    ],
+    "tags": [
+      "machine-learning",
+      "supervised-learning",
+      "unsupervised-learning",
+      "ensembles",
+      "probabilistic-methods"
+    ],
+    "suggested_books": [
+      "Tom Mitchell - Machine Learning (1997)",
+      "Ethem Alpaydin - Introduction to Machine Learning (2nd ed)",
+      "J. Shavlik & T. Dietterich (Eds.) - Readings in Machine Learning",
+      "P. Langley - Elements of Machine Learning",
+      "Shai Shalev-Shwartz & Shai Ben-David - Understanding Machine Learning (2017)",
+      "T. Hastie, R. Tibshirani, J. Friedman - The Elements of Statistical Learning"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
