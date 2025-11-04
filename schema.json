@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "branch": { "type": "string" },
+    "semester": { "type": "integer" },
+    "subject": {
+      "type": "object",
+      "properties": {
+        "code": { "type": ["string", "null"] },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "objectives": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "unit": { "type": "integer" },
+              "title": { "type": "string" },
+              "topics": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            },
+            "required": ["unit", "title", "topics"]
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "suggested_books": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "meta": {
+          "type": "object",
+          "properties": {
+            "version": { "type": "string" }
+          },
+          "required": ["version"]
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "objectives",
+        "prerequisites",
+        "units",
+        "tags",
+        "suggested_books",
+        "meta"
+      ]
+    }
+  },
+  "required": ["id", "branch", "semester", "subject"]
+}
