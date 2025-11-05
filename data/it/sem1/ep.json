@@ -1,0 +1,83 @@
+{
+  "id": "beu-it-1st-engineering-physics",
+  "branch": "Information Technology",
+  "semester": 1,
+  "subject": {
+    "code": "100110",
+    "name": "Engineering Physics",
+    "description": "A foundational course introducing core principles of physics relevant to engineering, including mechanics, optics, quantum physics, electromagnetism, and materials science.",
+    "objectives": [
+      "Understand the fundamental concepts of physics applied in engineering systems.",
+      "Develop problem-solving ability in optics, electromagnetism, and quantum mechanics.",
+      "Establish conceptual and mathematical understanding of physical principles underlying technology."
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Frame of Reference and Oscillations",
+        "topics": [
+          "Non-inertial frame of reference, rotating coordinate system, centripetal and Coriolis acceleration, and their applications in weather systems.",
+          "Harmonic oscillator, damped harmonic motion – overdamped, critically damped, and lightly damped oscillators; force oscillators and resonance."
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Optics and Lasers",
+        "topics": [
+          "Huygens’s principle, superposition of waves, and interference of light by wavefront splitting and amplitude-splitting.",
+          "Young’s double-slit experiment, Michelson interferometer, Fraunhofer diffraction from single slit and circular aperture, diffraction grating, and resolving power.",
+          "Einstein’s theory of matter–radiation interaction, Einstein’s coefficients (A and B), amplification by population inversion; types of lasers – gas laser, helium–neon laser, solid-state laser (ruby, neodymium), and semiconductor laser."
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Quantum Mechanics and Applications",
+        "topics": [
+          "Compton effect, photoelectric effect, wave–particle duality, de Broglie’s hypothesis, Heisenberg’s uncertainty principle.",
+          "Wave function and wave packets, phase and group velocities, Schrödinger’s wave equation, normalization, expectation values, eigenvalues, and eigenfunctions.",
+          "Application of Schrödinger’s wave equation for a particle in a one-dimensional box – wave function and eigenvalues of energy and momentum."
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Vector Calculus and Electrostatics",
+        "topics": [
+          "Gradient, divergence, and curl; line, surface, and volume integrals; Gauss’s divergence theorem and Stokes’ theorem in Cartesian coordinates.",
+          "Gauss’s law and its applications; divergence and curl of electrostatic fields; electrostatic potential; boundary conditions; Poisson’s and Laplace’s equations; dielectrics, polarization, bound charges, electric displacement, and boundary conditions in dielectrics."
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Magnetostatics and Electrodynamics",
+        "topics": [
+          "Lorentz force, Biot–Savart and Ampere’s circuital laws and their applications; divergence and curl of magnetostatic fields; magnetic vector potential; force and torque on a magnetic dipole; magnetic materials, magnetization, bound currents, and boundary conditions.",
+          "Ohm’s law, motional EMF, Faraday’s law, Lenz’s law; self and mutual inductance; energy stored in magnetic fields; Maxwell’s equations in vacuum and nonconducting media; continuity equation, Poynting theorem, and wave equations for plane electromagnetic waves in vacuum — their transverse nature and polarization."
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Solid-State Physics and Electronic Materials",
+        "topics": [
+          "Free electron theory of metals, Fermi level, Bloch’s theorem for particles in a periodic potential, Kronig–Penney model, and origin of energy bands.",
+          "Metals, semiconductors, and insulators; intrinsic and extrinsic semiconductors; carrier transport, diffusion, and drift; P–N junction."
+        ]
+      }
+    ],
+    "tags": ["Physics", "Engineering", "IT", "BEU"],
+    "suggested_books": [
+      "Quantum Physics of Atoms, Molecules, Solids, Nuclei and Particles – R. Eisberg, R. Resnick (Wiley India Pvt. Ltd, ISBN: 978-81-265-0818-1)",
+      "Theory of Vibration with Application – W.T. Thomson, M.D. Dahleh (Pearson India, ISBN: 978-81-317-0482-0)",
+      "Introduction to Electrodynamics – D.J. Griffiths (Pearson India, ISBN: 978-93-3255044-5)",
+      "Electromagnetism – I.S. Grant, W.R. Phillips (Wiley India Pvt. Ltd, ISBN: 978-04719-2712-9)",
+      "The Feynman Lectures on Physics – R.P. Feynman, R.B. Leighton (Pearson India, ISBN: 978-00-710-7458-2)",
+      "Optics – Ajay Ghatak (McGraw Hill, ISBN: 978-93-901-1359-0)",
+      "Physics of Vibration and Waves – H.J. Pain (Wiley India Pvt. Ltd, ISBN: 978-04-7001296-3)",
+      "Concepts of Modern Physics – Arthur Beiser (McGraw Hill, ISBN: 978-93-513-4185-7)",
+      "Introduction to Solid State Physics – C. Kittel (Wiley India Pvt. Ltd, ISBN: 978-81-265-7843-6)"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
