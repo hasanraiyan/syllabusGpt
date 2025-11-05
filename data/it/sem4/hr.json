@@ -1,0 +1,101 @@
+{
+  "id": "IT-4-HSMC401",
+  "branch": "Information Technology",
+  "semester": 4,
+  "subject": {
+    "code": "HSMC 401",
+    "name": "Human Resource Development and Organizational Behavior",
+    "description": "This course explores the principles of Human Resource Management and Organizational Behavior. It covers HR functions, planning, recruitment, performance management, industrial relations, and the behavioral aspects of organizations including leadership, motivation, and conflict management.",
+    "objectives": [
+      "To understand the role and significance of Human Resource Management in modern organizations.",
+      "To learn the processes of HR planning, recruitment, and selection.",
+      "To explore performance management systems and industrial relations frameworks.",
+      "To study organizational behavior concepts such as personality, attitudes, leadership, and conflict management."
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction to HRM and HR Planning",
+        "topics": [
+          "HR Role and Functions",
+          "Concept and Significance of HR",
+          "Changing role of HR managers",
+          "HR functions and Global Environment",
+          "Role of a HR Manager",
+          "Human Resources Planning: Planning Process and Levels",
+          "Job Analysis"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Recruitment, Selection, and Training",
+        "topics": [
+          "Recruitment and selection processes",
+          "Restructuring strategies",
+          "Sources of Recruitment",
+          "Selection Process",
+          "Placement and Induction",
+          "Employee Retention",
+          "Training and Development: Need for skill upgradation",
+          "Assessment of training needs",
+          "Retraining and Redeployment methods",
+          "Techniques of employee and executive training",
+          "Performance appraisal systems"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Performance Management and Industrial Relations",
+        "topics": [
+          "Performance Management System: Definition, Concepts, and Ethics",
+          "Methods of Performance Appraisal",
+          "Rating Errors and Competency Management",
+          "Industrial Relations: Factors influencing industrial relations",
+          "State Interventions and Legal Framework",
+          "Role of Trade Unions",
+          "Collective Bargaining",
+          "Workers' participation in management"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Organizational Behavior and Personality",
+        "topics": [
+          "Definition, Importance, and Historical Background of OB",
+          "Fundamental Concepts, Challenges, and Opportunities for OB",
+          "Personality: Meaning, Determinants, and Traits",
+          "Development of Personality",
+          "Attitudes: Types and Formation",
+          "Job Satisfaction"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Leadership, Politics, and Conflict Management",
+        "topics": [
+          "Leadership: Definition, Importance, and Theories of Leadership Styles",
+          "Organizational Politics: Definition and Factors influencing Political Behavior",
+          "Conflict Management: Traditional and Modern Views of Conflict",
+          "Functional and Dysfunctional Conflict",
+          "Conflict Process",
+          "Negotiation and Bargaining Strategies",
+          "Negotiation Process"
+        ]
+      }
+    ],
+    "tags": ["HRM", "Organizational Behavior", "Management", "Leadership", "Industrial Relations"],
+    "suggested_books": [
+      "Gary Dessler, Human Resource Management, 8th ed., Pearson Education, Delhi.",
+      "Robbins, S.P. & Judge, T.A., Organizational Behavior, Pearson Education, 15th Edn.",
+      "Decenzo & Robbins, Personnel Human Resource Management, 3rd ed., John Wiley & Sons (Pvt.) Ltd.",
+      "Biswajeet Patanayak, Human Resource Management, PHI, New Delhi.",
+      "Luis R. Gomez, Mejia, Balkin and Cardy, Managing Human Resources, PHI, New Delhi.",
+      "Luthans, Fred: Organizational Behavior, McGraw Hill, 12th Edn.",
+      "Shukla, Madhukar: Understanding Organizations - Organizational Theory & Practice."
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
