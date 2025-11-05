@@ -1,0 +1,100 @@
+{
+  "id": "IT-1-Workshop",
+  "branch": "Information Technology",
+  "semester": 1,
+  "subject": {
+    "code": "100113",
+    "name": "IT Workshop",
+    "description": "A practical course designed to provide students with hands-on skills in computer hardware, software tools, internet usage, and office productivity applications including MS Word, Excel, PowerPoint, and LaTeX.",
+    "objectives": [
+      "Understand the components and peripherals of a computer system and their functions.",
+      "Develop basic troubleshooting and maintenance skills for computer hardware.",
+      "Gain practical knowledge of internet tools, web browsers, and safe browsing practices.",
+      "Learn to use productivity software such as MS Word, Excel, PowerPoint, and LaTeX for document and data management."
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "PC Hardware",
+        "topics": [
+          "Identification of computer peripherals and components",
+          "CPU architecture and functions",
+          "Block diagram of CPU with configuration details",
+          "Functions of motherboard and peripherals",
+          "Assembling and disassembling of PC",
+          "Installation of operating systems",
+          "Basic Linux commands"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Internet",
+        "topics": [
+          "Web browsers and accessing websites",
+          "Surfing the web and using search engines",
+          "Customization of browsers and proxy settings",
+          "Bookmarks, search toolbars, and pop-up blockers",
+          "Antivirus types and web protection measures"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Microsoft Word",
+        "topics": [
+          "Overview of MS Word features",
+          "Usage of hyperlinks, symbols, spell check, and track changes",
+          "Creating tables of content and newspaper columns",
+          "Inserting images, using clipart and drawing tools",
+          "Formatting text, paragraphs, and images",
+          "Mail merge and document design",
+          "Creating project certificates, abstracts, newsletters, and resumes"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "LaTeX",
+        "topics": [
+          "Overview of LaTeX and comparison with MS Word and FOSS tools",
+          "Accessing toolbars, saving files, and using resources",
+          "Formatting fonts, drop caps, text effects, borders, and colors",
+          "Creating headers, footers, and inserting date/time options",
+          "Project creation in LaTeX and Word",
+          "Formatting styles, inserting tables and bullet points",
+          "Newsletter creation and advanced text formatting",
+          "Spell check, track changes, and mail merge integration"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Microsoft Excel",
+        "topics": [
+          "Overview of Excel features, formulas, and functions",
+          "Conditional formatting and charts",
+          "Hyperlinking, renaming, and inserting worksheets",
+          "Data analysis and scheduling with Excel tools",
+          "Creating and formatting GPA calculators using cell references and formulas"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Microsoft PowerPoint",
+        "topics": [
+          "Overview of PowerPoint features",
+          "Inserting images, transitions, and animations",
+          "Custom animations and hyperlink integration"
+        ]
+      }
+    ],
+    "tags": ["IT", "Workshop", "Computer Basics", "Office Tools", "LaTeX"],
+    "suggested_books": [
+      "The Complete Computer Upgrade and Repair Book, Cheryl A. Schmidt, 3rd Edition, WILEY Dreamtech",
+      "Introduction to Information Technology, ITL Education Solutions Limited, Pearson Education",
+      "PC Hardware – A Handbook, Kate J., Chase PHI",
+      "LaTeX Beginner’s Guide, Stefan Kottwitz, Packt Publishing"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
