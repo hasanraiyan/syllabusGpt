@@ -1,0 +1,107 @@
+{
+  "id": "IT-1-BE",
+  "branch": "Information Technology",
+  "semester": 1,
+  "subject": {
+    "code": "100114",
+    "name": "Basic Electronics Engineering",
+    "description": "Introduction to fundamental electronic components and devices including diodes, transistors, operational amplifiers, and digital electronics. Emphasis on their characteristics, operations, and applications in modern circuits.",
+    "objectives": [
+      "To understand the fundamental principles of semiconductor devices.",
+      "To analyze the behavior and applications of diodes and transistors.",
+      "To study operational amplifiers and their practical applications.",
+      "To learn the basics of digital electronics and Boolean logic."
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Semiconductor Diode",
+        "topics": [
+          "Intrinsic and extrinsic types",
+          "Energy band in intrinsic and extrinsic semiconductors",
+          "Equilibrium carrier concentration",
+          "Direct and indirect band-gap semiconductors",
+          "Ideal diode construction",
+          "p-n junction under open circuit, drift, and diffusion current",
+          "Built-in potential, forward and reverse bias conditions",
+          "Temperature effects, static and dynamic resistance, breakdown mechanisms",
+          "Zener diode working and VI characteristics",
+          "Light emitting diode (LED), Photodiode, Solar cell"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Diode Applications",
+        "topics": [
+          "Half-wave and full-wave rectifiers",
+          "Rectifier with filters",
+          "Zener diode as voltage regulator",
+          "Clipping and clamping circuits",
+          "Voltage doubler circuits",
+          "Numerical problems on rectifiers, filters, and Zener regulators"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Bipolar Junction Transistor (BJT)",
+        "topics": [
+          "BJT construction, symbols, and types (PNP, NPN)",
+          "Working principle of BJT",
+          "BJT configurations and characteristics",
+          "Load line analysis and operating point",
+          "Biasing circuits and stability",
+          "BJT as a switch and amplifier",
+          "Small signal model of BJT",
+          "CE amplifier with and without feedback"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Field Effect Transistor (FET)",
+        "topics": [
+          "Characteristics of FETs",
+          "Comparison between FET and BJT",
+          "JFET construction and principle of operation",
+          "Shockley equation",
+          "Output and transfer characteristics",
+          "Depletion and enhancement type MOSFET construction and operation"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Operational Amplifier",
+        "topics": [
+          "Block diagram and schematic symbol of an operational amplifier",
+          "Ideal and practical characteristics of op-amps",
+          "Concept of virtual ground",
+          "Inverting and non-inverting amplifiers",
+          "Voltage follower",
+          "Adder, subtractor, integrator, differentiator"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Fundamentals of Digital Electronics",
+        "topics": [
+          "Number systems: octal, hexadecimal, binary",
+          "Binary addition using 1’s and 2’s complement method",
+          "Logic gates and universal gates",
+          "Boolean algebra and De Morgan’s theorems",
+          "Simplification and realization of Boolean expressions using basic and NAND gates"
+        ]
+      }
+    ],
+    "tags": ["electronics", "semiconductor", "transistor", "digital-electronics", "op-amp"],
+    "suggested_books": [
+      "Electronic Devices and Circuit Theory by Boylestad and Nashelsky, Pearson",
+      "Electronic Principles by Albert Malvino & Davis J. Bates, TMH",
+      "Digital Logic and Computer Design by M. Morris Mano, PHI",
+      "Electronic Devices and Circuits by David A. Bell, Oxford",
+      "Microelectronic Circuits: Theory and Application by Sedra and Smith, Oxford"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
