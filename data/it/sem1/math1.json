@@ -1,0 +1,94 @@
+{
+  "id": "beu-100102-math1",
+  "branch": "Information Technology",
+  "semester": 1,
+  "subject": {
+    "code": "100102",
+    "name": "Engineering Mathematics-I",
+    "description": "This course covers foundational concepts in linear algebra, single and multivariable calculus, and vector calculus, essential for engineering problem-solving.",
+    "objectives": [
+      "To introduce the concepts of linear algebra and matrix operations.",
+      "To develop understanding of calculus for single and multivariable functions.",
+      "To provide knowledge of vector calculus and its engineering applications."
+    ],
+    "prerequisites": ["Basic knowledge of high school mathematics including algebra and calculus."],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Linear Algebra-I",
+        "topics": [
+          "Elementary Row operations",
+          "Gauss-Jordan Method for finding the inverse of Matrix",
+          "Complex Matrix: Hermitian, Skew Hermitian and Unitary Matrix",
+          "Vector space, Sub Spaces, Linear dependence and Independences of Vectors",
+          "Linear Span, Basis, Dimension, Extension of basis of subspace",
+          "The rank of a matrix, Row and column space, Solvability of system of linear equations"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Linear Algebra-II",
+        "topics": [
+          "Linear Transformations, Kernel and Range of linear transformation",
+          "Matrix Representation of a linear transformation",
+          "Rank-Nullity Theorem",
+          "Eigen Value and Eigen Vectors",
+          "Properties of Eigen vectors, Eigen Bases",
+          "Orthogonal Transformation, Similarity Transformation, Matrix Diagonalization, Cayley-Hamilton Theorem"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Calculus for Single Variable",
+        "topics": [
+          "Indeterminate form, L'Hospital Rule",
+          "Rolle's Theorem, Mean Value Theorem",
+          "Expansion of function (single variable), Taylor and Maclaurin Series",
+          "Riemann Integration, Riemann Sum",
+          "Improper Integrals, Beta and Gamma function and their properties"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Multivariable Calculus (Differentiation)",
+        "topics": [
+          "Function with two or more variables, Limit, continuity and Partial differentiation",
+          "Total Differentiation, Taylor's series and Maclaurin's series for functions with two variables",
+          "Jacobian, Maxima and Minima",
+          "Method of Lagrange's multiplier"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "Multivariable Calculus (Integration)",
+        "topics": [
+          "Double Integral, change of order of integration",
+          "Triple integral, Change of Variable in a Double and Triple Integrals",
+          "Change to polar, cylindrical, and spherical coordinates",
+          "Applications to area and volume using double and triple integrals"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Vector Calculus",
+        "topics": [
+          "Scalar and vector fields, Gradient, Directional derivative, Divergence, Curl and their properties",
+          "Line integral, Green's theorem in plane (without proof)",
+          "Surface integral, Stoke's theorem (without proof)",
+          "Volume Integral, Gauss-Divergence theorem (without proof)"
+        ]
+      }
+    ],
+    "tags": ["Mathematics", "Calculus", "Linear Algebra", "Vector Calculus"],
+    "suggested_books": [
+      "Mathematics-I (Calculus & Linear Algebra), Reena Garg, Khanna Book Publishing Co., ISBN-10: 9391505171",
+      "Advanced Engineering Mathematics, Chandrika Prasad & Reena Garg, Khanna Book Publishing Co., 2021, ISBN-10: 9386173522, ISBN-13: 9789386173522",
+      "Higher Engineering Mathematics, B.V. Ramana, Tata McGraw Hill, 2010, ISBN-10: 007063419X, ISBN-13: 9780070634190",
+      "Advanced Engineering Mathematics, S.R.K. Iyengar & R.K. Jain, Narosa, 5th Edition, ISBN-10: 8184875606, ISBN-13: 9788184875607",
+      "Advanced Engineering Mathematics, Erwin Kreyszig, 9th Edition, John Wiley & Sons, 2006"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
