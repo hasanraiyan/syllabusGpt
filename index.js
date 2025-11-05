@@ -229,6 +229,23 @@ app.get('/api/syllabus/schema', (req, res) => {
   res.json(schema);
 });
 
+// Get contributing guidelines
+app.get('/api/contributing', (req, res) => {
+  try {
+    const readmePath = path.join(__dirname, 'README.md');
+    const readmeContent = fs.readFileSync(readmePath, 'utf8');
+    const lines = readmeContent.split('\n');
+    const contributingStart = lines.findIndex((line) => line.startsWith('## Contributing'));
+    const licenseStart = lines.findIndex((line) => line.startsWith('## License'));
+    const contributingLines = lines.slice(contributingStart, licenseStart);
+    const contributingText = contributingLines.join('\n').trim();
+    res.type('text/plain');
+    res.send(contributingText);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to load contributing guidelines' });
+  }
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

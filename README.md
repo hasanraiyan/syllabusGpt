@@ -44,6 +44,7 @@ A REST API for accessing engineering syllabus data across various branches and s
 - `GET /api/syllabus/search?q=query&branch=branch&semester=semester&tags=tag1,tag2&page=1&limit=20` - Search syllabi
 - `GET /api/syllabus/tags` - Get all available tags with counts
 - `GET /api/syllabus/schema` - Get the JSON schema for syllabus data
+- `GET /api/contributing` - Get contributing guidelines as plain text
 
 ## Data Structure
 
@@ -98,31 +99,56 @@ We welcome contributions to expand our syllabus database! Here's how to add new 
 
 ### Adding New Syllabus Data
 
+#### Option 1: Manual Addition
+
 1. **Fork the repository** and create a feature branch:
 
-   ```bash
+```bash
    git checkout -b add-[branch]-[semester]-[subject]
-   ```
+```
 
 2. **Locate the correct directory**: Navigate to `data/[branch]/sem[1-8]/`
 
 3. **Create a JSON file**: Use the provided schema (available at `/api/syllabus/schema`). Ensure:
-   - The `id` is unique across all files
-   - Branch and semester match the directory structure
-   - All required fields are present
-   - Tags are relevant and descriptive
+
+- The `id` is unique across all files
+- Branch and semester match the directory structure
+  - All required fields are present
+  - Tags are relevant and descriptive
 
 4. **Validate your JSON**: Use a JSON validator or test with the API locally
+
+5. **Commit and push**:
+
+```bash
+git add .
+git commit -m "Add [Subject Name] syllabus for [Branch] Sem [Semester]"
+   git push origin add-[branch]-[semester]-[subject]
+```
+
+6. **Create a Pull Request**: Provide a clear description of the added content
+
+#### Option 2: Using Syllabus GPT (AI-Assisted)
+
+For an easier contribution process using this AI tool:
+
+1. **Fork the repository**: [https://github.com/hasanraiyan/syllabusGpt](https://github.com/hasanraiyan/syllabusGpt)
+
+2. **Get the latest schema**: Tell the AI "get latest schema" to obtain the current JSON schema format.
+
+3. **Share your syllabus**: Provide your syllabus content to the AI and ask it to generate the syllabus in the specific format required by the schema.
+
+4. **Add the generated syllabus**: Place the AI-generated JSON file in the correct folder (`data/[branch]/sem[1-8]/`) in your forked repository.
 
 5. **Commit and push**:
 
    ```bash
    git add .
    git commit -m "Add [Subject Name] syllabus for [Branch] Sem [Semester]"
-   git push origin add-[branch]-[semester]-[subject]
+   git push origin main
    ```
 
-6. **Create a Pull Request**: Provide a clear description of the added content
+6. **Create a Pull Request**: Submit your changes for review.
 
 ### Guidelines for Contributors
 

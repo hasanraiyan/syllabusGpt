@@ -5,6 +5,7 @@ info:
   version: v1.0.0
 servers:
   - url: https://syllabusgpt.onrender.com
+
 paths:
   /api/syllabus:
     get:
@@ -26,6 +27,7 @@ paths:
                   additionalProperties:
                     type: integer
                     description: Number of subjects in this semester
+
   /api/syllabus/{branch}/{semester}:
     get:
       operationId: getSubjectsByBranchAndSemester
@@ -50,6 +52,7 @@ paths:
                 type: array
                 items:
                   $ref: "#/components/schemas/Syllabus"
+
   /api/syllabus/subject/{id}:
     get:
       operationId: getSubjectById
@@ -77,6 +80,7 @@ paths:
                   error:
                     type: string
                     example: Subject not found
+
   /api/syllabus/search:
     get:
       operationId: searchSyllabus
@@ -139,6 +143,7 @@ paths:
                         type: integer
                       pages:
                         type: integer
+
   /api/syllabus/tags:
     get:
       operationId: getTags
@@ -151,10 +156,14 @@ paths:
               schema:
                 type: object
                 description: A map of tag names to their usage counts
-                properties: {}
+                properties:
+                  exampleTag:
+                    type: integer
+                    description: Example tag count
                 additionalProperties:
                   type: integer
                   description: Count of subjects with this tag
+
   /api/syllabus/schema:
     get:
       operationId: getSchema
@@ -167,8 +176,25 @@ paths:
               schema:
                 type: object
                 description: JSON schema representing a syllabus structure
-                properties: {}
+                properties:
+                  schemaVersion:
+                    type: string
+                    description: Version identifier of the schema
                 additionalProperties: true
+
+  /api/contributing:
+    get:
+      operationId: getContributing
+      summary: Get contributing guidelines as plain text
+      responses:
+        "200":
+          description: Contributing guidelines
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: Plain text content of contributing guidelines
+
 components:
   schemas:
     Syllabus:
@@ -182,6 +208,7 @@ components:
           type: integer
         subject:
           $ref: "#/components/schemas/Subject"
+
     Subject:
       type: object
       properties:
