@@ -38,6 +38,14 @@
         ]
       },
       {
+        "unit": 3,
+        "title": "Pipelining and Parallel Processors",
+        "topics": [
+          "Pipelining: Basic concepts of pipelining, throughput and speedup, pipeline hazards",
+          "Parallel Processors: Introduction to parallel processors, concurrent access to memory and cache coherency"
+        ]
+      },
+      {
         "unit": 4,
         "title": "Memory Organization",
         "topics": [
@@ -55,7 +63,7 @@
       "Computer System Design and Architecture, 2nd Edition by Vincent P. Heuring and Harry F. Jordan, Pearson Education"
     ],
     "meta": {
-      "version": "1.0"
+      "version": "1.1"
     }
   }
 }
