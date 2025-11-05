@@ -1,0 +1,95 @@
+{
+  "id": "IT-1-PPS",
+  "branch": "Information Technology",
+  "semester": 1,
+  "subject": {
+    "code": "100111",
+    "name": "Programming for Problem Solving",
+    "description": "An introductory course to programming fundamentals focusing on C language, algorithms, and structured problem-solving techniques.",
+    "objectives": [
+      "Understand the fundamentals of computer systems and programming concepts.",
+      "Learn to write, compile, and execute simple C programs.",
+      "Develop logic-building and problem-solving skills using algorithms and flowcharts.",
+      "Gain hands-on experience with functions, recursion, pointers, and file handling."
+    ],
+    "prerequisites": [],
+    "units": [
+      {
+        "unit": 1,
+        "title": "Introduction to Programming",
+        "topics": [
+          "Introduction to components of a computer system (disks, memory, processor, operating system, compilers, etc.)",
+          "Program storage and execution",
+          "Idea of algorithm: steps to solve logical and numerical problems",
+          "Algorithm representation: Flowchart/Pseudocode with examples",
+          "Source code, variables (with data types), and memory locations",
+          "Syntax and logical errors in compilation, object, and executable code"
+        ]
+      },
+      {
+        "unit": 2,
+        "title": "Operators, Conditional Branching and Loops",
+        "topics": [
+          "Arithmetic expressions and operators",
+          "Relational, logical, and bitwise operators with precedence",
+          "Conditional and looping constructs",
+          "Iteration and loops"
+        ]
+      },
+      {
+        "unit": 3,
+        "title": "Arrays and Strings",
+        "topics": [
+          "Array declaration and initialization (1-D, 2-D)",
+          "Bound checking in arrays",
+          "Character arrays and strings"
+        ]
+      },
+      {
+        "unit": 4,
+        "title": "Functions, Recursion and Pointers",
+        "topics": [
+          "Functions and built-in libraries",
+          "Parameter passing (by value, by reference)",
+          "Recursion as a method of problem solving",
+          "Example programs: Factorial, Fibonacci series, Ackermann function",
+          "Pointers: definition, usage, and examples",
+          "Pointers in self-referential structures, call by reference"
+        ]
+      },
+      {
+        "unit": 5,
+        "title": "User Defined Data Types and File Handling",
+        "topics": [
+          "Structures: defining, declaring, and initializing",
+          "Accessing structure members",
+          "Arrays of structures and nested structures",
+          "Structure and function relationships",
+          "Unions: definition and declaration",
+          "Accessing union members and initializing",
+          "File handling: opening, closing, reading, and writing (text and binary)",
+          "Error handling and random access to files"
+        ]
+      },
+      {
+        "unit": 6,
+        "title": "Basic Algorithms",
+        "topics": [
+          "Searching algorithms",
+          "Sorting algorithms: Bubble, Insertion, and Selection",
+          "Finding roots of equations (introductory)",
+          "Order of complexity (conceptual overview)"
+        ]
+      }
+    ],
+    "tags": ["Programming", "C Language", "Algorithms", "Computer Science"],
+    "suggested_books": [
+      "Programming in ANSI C, 4th Ed, E Balagurusamy, McGraw Hill Education India Pvt. Ltd, ISBN: 978-9339219666",
+      "The C Programming Language, 2nd Ed, W. Kernighan and Dennis Ritchie, Pearson Education India, ISBN: 978-9332549449",
+      "Computer Fundamentals and Programming in C, 3rd Ed, Reema Thareja, Oxford University Press, ISBN: 978-9354977893"
+    ],
+    "meta": {
+      "version": "1.0"
+    }
+  }
+}
