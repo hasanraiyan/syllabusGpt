@@ -19,14 +19,7 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/syllab
 async function connectMongoDB(retries = 5) {
   for (let i = 0; i < retries; i++) {
     try {
-      await mongoose.connect(MONGODB_URI, {
-        serverSelectionTimeoutMS: 10000, // Keep trying to send operations for 10 seconds
-        socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
-        bufferCommands: false, // Disable mongoose buffering
-        bufferMaxEntries: 0, // Disable mongoose buffering
-        maxPoolSize: 10, // Maintain up to 10 socket connections
-        family: 4, // Use IPv4, skip trying IPv6
-      });
+      await mongoose.connect(MONGODB_URI);
 
       console.log('✅ Connected to MongoDB successfully');
       return;
