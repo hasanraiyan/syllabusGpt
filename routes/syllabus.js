@@ -1,10 +1,48 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import Syllabus from '../models/Syllabus.js';
 import Subject from '../models/Subject.js';
 import Unit from '../models/Unit.js';
 import { requireAuth, requirePermission, authenticateApiKey } from '../auth/middleware.js';
 
 const router = express.Router();
+
+// Health check endpoint
+router.get('/health', async (req, res) => {
+  try {
+    // Check MongoDB connection
+    const mongoStatus = mongoose.connection.readyState;
+    const mongoStates = {
+      0: 'disconnected',
+      1: 'connected',
+      2: 'connecting',
+      3: 'disconnecting',
+    };
+
+    const isHealthy = mongoStatus === 1;
+
+    res.status(isHealthy ? 200 : 503).json({
+      status: isHealthy ? 'healthy' : 'unhealthy',
+      timestamp: new Date().toISOString(),
+      services: {
+        mongodb: {
+          status: mongoStates[mongoStatus],
+          ready: mongoStatus === 1,
+        },
+      },
+      environment: {
+        node_env: process.env.NODE_ENV || 'development',
+        mongodb_uri: process.env.MONGODB_URI ? 'configured' : 'not configured',
+      },
+    });
+  } catch (error) {
+    res.status(503).json({
+      status: 'error',
+      timestamp: new Date().toISOString(),
+      error: error.message,
+    });
+  }
+});
 
 // Get all syllabi (no auth required)
 router.get('/', async (req, res) => {
@@ -48,7 +86,20 @@ router.get('/', async (req, res) => {
     console.log('Response sent successfully');
   } catch (error) {
     console.error('Error in GET /api/v2/syllabus:', error);
-    res.status(500).json({ error: 'Failed to fetch syllabi' });
+
+    // Check if it's a MongoDB connection error
+    if (error.name === 'MongooseError' || error.message.includes('buffering timed out')) {
+      return res.status(503).json({
+        error: 'Database connection error',
+        message: 'Unable to connect to database. Please check your MongoDB configuration.',
+        details: process.env.NODE_ENV === 'development' ? error.message : undefined,
+      });
+    }
+
+    res.status(500).json({
+      error: 'Failed to fetch syllabi',
+      message: process.env.NODE_ENV === 'development' ? error.message : 'Internal server error',
+    });
   }
 });
 

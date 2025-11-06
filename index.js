@@ -15,11 +15,67 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/syllabus';
 
-// Connect to MongoDB
-mongoose
-  .connect(MONGODB_URI)
-  .then(() => console.log('Connected to MongoDB'))
-  .catch((err) => console.error('MongoDB connection error:', err));
+// Connect to MongoDB with retry logic
+async function connectMongoDB(retries = 5) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      await mongoose.connect(MONGODB_URI, {
+        serverSelectionTimeoutMS: 10000, // Keep trying to send operations for 10 seconds
+        socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
+        bufferCommands: false, // Disable mongoose buffering
+        bufferMaxEntries: 0, // Disable mongoose buffering
+        maxPoolSize: 10, // Maintain up to 10 socket connections
+        family: 4, // Use IPv4, skip trying IPv6
+      });
+
+      console.log('✅ Connected to MongoDB successfully');
+      return;
+    } catch (error) {
+      console.error(`❌ MongoDB connection attempt ${i + 1}/${retries} failed:`, error.message);
+
+      if (i === retries - 1) {
+        console.error(
+          '💥 All MongoDB connection attempts failed. Please check your MONGODB_URI environment variable.'
+        );
+        process.exit(1);
+      }
+
+      // Wait before retrying (exponential backoff)
+      const waitTime = Math.min(1000 * Math.pow(2, i), 30000);
+      console.log(`⏳ Retrying in ${waitTime}ms...`);
+      await new Promise((resolve) => setTimeout(resolve, waitTime));
+    }
+  }
+}
+
+// Handle MongoDB connection events
+mongoose.connection.on('connected', () => {
+  console.log('📱 Mongoose connected to MongoDB');
+});
+
+mongoose.connection.on('error', (err) => {
+  console.error('❌ Mongoose connection error:', err);
+});
+
+mongoose.connection.on('disconnected', () => {
+  console.log('📴 Mongoose disconnected from MongoDB');
+});
+
+// Graceful shutdown
+process.on('SIGINT', async () => {
+  console.log('🔄 Received SIGINT, closing MongoDB connection...');
+  await mongoose.connection.close();
+  process.exit(0);
+});
+
+process.on('SIGTERM', async () => {
+  console.log('🔄 Received SIGTERM, closing MongoDB connection...');
+  await mongoose.connection.close();
+  process.exit(0);
+});
+
+// Start MongoDB connection
+connectMongoDB();
 
 // Middleware
 app.use(cors());

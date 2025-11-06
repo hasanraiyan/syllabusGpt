@@ -12,6 +12,13 @@ A REST API for accessing engineering syllabus data across various branches and s
 
 ## Quick Start
 
+### Prerequisites
+
+- Node.js 18+
+- MongoDB Atlas account (for cloud database) or local MongoDB instance
+
+### Setup
+
 1. Clone the repository:
 
    ```bash
@@ -27,15 +34,47 @@ A REST API for accessing engineering syllabus data across various branches and s
    pnpm install
    ```
 
-3. Start the development server:
+3. Set up environment variables:
+
+   Create a `.env` file in the root directory:
+
+   ```env
+   # Database (required for API v2)
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/syllabus?retryWrites=true&w=majority
+
+   # JWT Secret (required for authentication)
+   JWT_SECRET=your-super-secret-jwt-key-here
+
+   # Server
+   PORT=5000
+   NODE_ENV=development
+   ```
+
+4. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-4. The API will be running at `http://localhost:5000`
+5. The API will be running at `http://localhost:5000`
+
+### Database Setup
+
+The application supports two modes:
+
+- **Legacy Mode**: Uses JSON files in `data/` directory (original functionality)
+- **API v2 Mode**: Uses MongoDB for user authentication and API key management
+
+For full functionality, set up MongoDB Atlas:
+
+1. Create a free cluster at [MongoDB Atlas](https://cloud.mongodb.com/)
+2. Create a database user
+3. Whitelist your IP address
+4. Get your connection string and update `MONGODB_URI`
 
 ## API Endpoints
+
+### Legacy API (JSON Files)
 
 - `GET /` - Health check
 - `GET /api/syllabus` - Get branches, semesters, and subject counts
@@ -45,6 +84,25 @@ A REST API for accessing engineering syllabus data across various branches and s
 - `GET /api/syllabus/tags` - Get all available tags with counts
 - `GET /api/syllabus/schema` - Get the JSON schema for syllabus data
 - `GET /api/contributing` - Get contributing guidelines as plain text
+
+### API v2 (MongoDB + Authentication)
+
+- `GET /api/v2/syllabus/health` - Service health check
+- `GET /api/v2/syllabus` - Get all syllabi with pagination (no auth required)
+- `GET /api/v2/syllabus/:id` - Get specific syllabus (no auth required)
+
+#### Authentication
+
+- `POST /api/v2/auth/register` - Register new user
+- `POST /api/v2/auth/login` - Login user
+- `GET /api/v2/auth/me` - Get current user info
+
+#### API Key Management (JWT Auth Required)
+
+- `GET /api/v2/auth/api-keys` - List user's API keys
+- `POST /api/v2/auth/api-keys` - Generate new API key
+- `GET /api/v2/auth/api-keys/:id` - Get specific API key
+- `DELETE /api/v2/auth/api-keys/:id` - Revoke API key
 
 ## Data Structure
 
@@ -92,6 +150,39 @@ Each JSON file represents a single subject and follows this structure:
   }
 }
 ```
+
+## Deployment
+
+### Render.com Setup
+
+1. **Create a new Web Service** on Render.com
+2. **Connect your GitHub repository**
+3. **Set environment variables**:
+   - `MONGODB_URI` - Your MongoDB Atlas connection string
+   - `JWT_SECRET` - A secure random string (generate with `openssl rand -base64 32`)
+   - `NODE_ENV` - Set to `production`
+4. **Set build command**: `npm install`
+5. **Set start command**: `npm start`
+
+### Health Check
+
+After deployment, check the service status at:
+
+- `/api/v2/syllabus/health` - MongoDB connection and service health
+
+### Troubleshooting
+
+**MongoDB Connection Issues:**
+
+- Ensure `MONGODB_URI` is set correctly
+- Whitelist all IPs (0.0.0.0/0) in MongoDB Atlas for Render
+- Check the health endpoint for connection status
+
+**Application Errors:**
+
+- Check Render logs for detailed error messages
+- Verify all environment variables are set
+- Ensure MongoDB Atlas cluster is running
 
 ## Contributing
 
