@@ -1,19 +1,30 @@
 import express from 'express';
 import cors from 'cors';
 import Fuse from 'fuse.js';
+import mongoose from 'mongoose';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import authRoutes from './routes/auth.js';
+import syllabusRoutes from './routes/syllabus.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/syllabus';
+
+// Connect to MongoDB
+mongoose
+  .connect(MONGODB_URI)
+  .then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.error('MongoDB connection error:', err));
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static('public'));
 
 // Request logging middleware
 app.use((req, res, next) => {
@@ -66,6 +77,10 @@ function loadSyllabi(dir) {
 }
 
 // Routes
+
+// API v2 routes (MongoDB)
+app.use('/api/v2/auth', authRoutes);
+app.use('/api/v2/syllabus', syllabusRoutes);
 
 // Root
 app.get('/', (req, res) => {

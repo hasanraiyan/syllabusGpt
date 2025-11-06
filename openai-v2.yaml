@@ -1,0 +1,577 @@
+openapi: 3.1.0
+info:
+  title: Syllabus API v2
+  description: API for managing and searching syllabi with MongoDB backend
+  version: v2.0.0
+servers:
+  - url: https://syllabusgpt.onrender.com
+
+security:
+  - bearerAuth: []
+  - apiKeyAuth: []
+
+paths:
+  /api/v2/auth/register:
+    post:
+      operationId: register
+      summary: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - username
+                - email
+                - password
+              properties:
+                username:
+                  type: string
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+                  minLength: 6
+      responses:
+        "201":
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  user:
+                    $ref: "#/components/schemas/User"
+        "409":
+          description: User already exists
+        "400":
+          description: Invalid input
+
+  /api/v2/auth/login:
+    post:
+      operationId: login
+      summary: Login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - username
+                - password
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        "200":
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  user:
+                    $ref: "#/components/schemas/User"
+        "401":
+          description: Invalid credentials
+
+  /api/v2/auth/me:
+    get:
+      operationId: getCurrentUser
+      summary: Get current user info
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: User info
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "401":
+          description: Not authenticated
+
+  /api/v2/auth/api-keys:
+    post:
+      operationId: createApiKey
+      summary: Generate a new API key
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+              properties:
+                name:
+                  type: string
+                permissions:
+                  type: array
+                  items:
+                    type: string
+                    enum: [read, write, admin]
+                  default: [read]
+                expiresAt:
+                  type: string
+                  format: date-time
+      responses:
+        "201":
+          description: API key created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiKey"
+        "401":
+          description: Not authenticated
+    get:
+      operationId: listApiKeys
+      summary: List user's API keys
+      security:
+        - bearerAuth: []
+      responses:
+        "200":
+          description: List of API keys
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  apiKeys:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/ApiKey"
+
+  /api/v2/auth/api-keys/{id}:
+    delete:
+      operationId: revokeApiKey
+      summary: Revoke an API key
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: API key revoked
+        "404":
+          description: API key not found
+
+  /api/v2/syllabus:
+    get:
+      operationId: getSyllabi
+      summary: Get all syllabi
+      parameters:
+        - name: branch
+          in: query
+          schema:
+            type: string
+        - name: semester
+          in: query
+          schema:
+            type: integer
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        "200":
+          description: List of syllabi
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  syllabi:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Syllabus"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+    post:
+      operationId: createSyllabus
+      summary: Create a new syllabus
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SyllabusInput"
+      responses:
+        "201":
+          description: Syllabus created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Syllabus"
+        "401":
+          description: Not authenticated
+        "403":
+          description: Insufficient permissions
+
+  /api/v2/syllabus/{id}:
+    get:
+      operationId: getSyllabusById
+      summary: Get a single syllabus by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Syllabus details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Syllabus"
+        "404":
+          description: Syllabus not found
+    put:
+      operationId: updateSyllabus
+      summary: Update a syllabus
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SyllabusInput"
+      responses:
+        "200":
+          description: Syllabus updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Syllabus"
+        "404":
+          description: Syllabus not found
+        "401":
+          description: Not authenticated
+        "403":
+          description: Insufficient permissions
+    delete:
+      operationId: deleteSyllabus
+      summary: Delete a syllabus
+      security:
+        - bearerAuth: []
+        - apiKeyAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Syllabus deleted
+        "404":
+          description: Syllabus not found
+        "401":
+          description: Not authenticated
+        "403":
+          description: Insufficient permissions
+
+  /api/v2/syllabus/search:
+    get:
+      operationId: searchSyllabi
+      summary: Search syllabi
+      parameters:
+        - name: q
+          in: query
+          schema:
+            type: string
+          description: Search query
+        - name: branch
+          in: query
+          schema:
+            type: string
+        - name: semester
+          in: query
+          schema:
+            type: integer
+        - name: tags
+          in: query
+          schema:
+            type: string
+          description: Comma-separated tags
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+      responses:
+        "200":
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Syllabus"
+                  pagination:
+                    $ref: "#/components/schemas/Pagination"
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: x-api-key
+
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        role:
+          type: string
+          enum: [admin, user]
+
+    ApiKey:
+      type: object
+      properties:
+        _id:
+          type: string
+        key:
+          type: string
+          description: The API key (only shown on creation)
+        name:
+          type: string
+        permissions:
+          type: array
+          items:
+            type: string
+            enum: [read, write, admin]
+        isActive:
+          type: boolean
+        expiresAt:
+          type: string
+          format: date-time
+
+    Syllabus:
+      type: object
+      properties:
+        _id:
+          type: string
+        id:
+          type: string
+        branch:
+          type: string
+        semester:
+          type: integer
+        subject:
+          $ref: "#/components/schemas/Subject"
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    SyllabusInput:
+      type: object
+      required:
+        - id
+        - branch
+        - semester
+        - subject
+      properties:
+        id:
+          type: string
+        branch:
+          type: string
+        semester:
+          type: integer
+        subject:
+          $ref: "#/components/schemas/SubjectInput"
+
+    Subject:
+      type: object
+      properties:
+        _id:
+          type: string
+        code:
+          type: string
+          nullable: true
+        name:
+          type: string
+        description:
+          type: string
+        objectives:
+          type: array
+          items:
+            type: string
+        prerequisites:
+          type: array
+          items:
+            type: string
+        tags:
+          type: array
+          items:
+            type: string
+        suggested_books:
+          type: array
+          items:
+            type: string
+        meta:
+          type: object
+          properties:
+            version:
+              type: string
+        units:
+          type: array
+          items:
+            $ref: "#/components/schemas/Unit"
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    SubjectInput:
+      type: object
+      required:
+        - name
+        - description
+        - objectives
+        - prerequisites
+        - units
+        - tags
+        - suggested_books
+        - meta
+      properties:
+        code:
+          type: string
+          nullable: true
+        name:
+          type: string
+        description:
+          type: string
+        objectives:
+          type: array
+          items:
+            type: string
+        prerequisites:
+          type: array
+          items:
+            type: string
+        units:
+          type: array
+          items:
+            $ref: "#/components/schemas/UnitInput"
+        tags:
+          type: array
+          items:
+            type: string
+        suggested_books:
+          type: array
+          items:
+            type: string
+        meta:
+          type: object
+          required:
+            - version
+          properties:
+            version:
+              type: string
+
+    Unit:
+      type: object
+      properties:
+        _id:
+          type: string
+        subject:
+          type: string
+        unit:
+          type: integer
+        title:
+          type: string
+        topics:
+          type: array
+          items:
+            type: string
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    UnitInput:
+      type: object
+      required:
+        - unit
+        - title
+        - topics
+      properties:
+        unit:
+          type: integer
+        title:
+          type: string
+        topics:
+          type: array
+          items:
+            type: string
+
+    Pagination:
+      type: object
+      properties:
+        page:
+          type: integer
+        limit:
+          type: integer
+        total:
+          type: integer
+        pages:
+          type: integer
