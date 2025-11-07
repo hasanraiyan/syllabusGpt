@@ -46,6 +46,12 @@ A REST API for accessing engineering syllabus data across various branches and s
 - `GET /api/syllabus/schema` - Get the JSON schema for syllabus data
 - `GET /api/contributing` - Get contributing guidelines as plain text
 
+## SDK
+
+A TypeScript SDK is available to interact with the API. It is automatically generated from the `openapi.yaml` specification.
+
+For more details on how to use, build, and regenerate the SDK, please see the [SDK README](./sdk/typescript/README.md).
+
 ## Data Structure
 
 Syllabus data is organized in the `data/` directory with the following structure:
